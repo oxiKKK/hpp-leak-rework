@@ -15,3 +15,12 @@ There is a injector included, which you can use to inject.
 # Building
 Each cheat version has it's solution prepared to build. You need to build the project by yourself. There should be no compiler errors if you use c++20, v142 toolset and windows SDK 10.0.
 Loaders aren't supposed to be compiled, I didn't even test them.
+
+# CHEAT 0
+![alt text](https://i.imgur.com/Xfnoyqt.png)
+
+# CHEAT 1
+![alt text](https://i.imgur.com/vljskVA.png)
+
+# CHEAT 1
+![alt text](https://i.imgur.com/zOd7PLR.png)
