@@ -1,0 +1,1296 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClInclude Include="src\math\qangle.h">
+      <Filter>src\math</Filter>
+    </ClInclude>
+    <ClInclude Include="src\math\vector.h">
+      <Filter>src\math</Filter>
+    </ClInclude>
+    <ClInclude Include="includes\ValveSDK\common\beamdef.h">
+      <Filter>includes\ValveSDK\common</Filter>
+    </ClInclude>
+    <ClInclude Include="includes\ValveSDK\common\cl_entity.h">
+      <Filter>includes\ValveSDK\common</Filter>
+    </ClInclude>
+    <ClInclude Include="includes\ValveSDK\common\com_model.h">
+      <Filter>includes\ValveSDK\common</Filter>
+    </ClInclude>
+    <ClInclude Include="includes\ValveSDK\common\const.h">
+      <Filter>includes\ValveSDK\common</Filter>
+    </ClInclude>
+    <ClInclude Include="includes\ValveSDK\common\crc.h">
+      <Filter>includes\ValveSDK\common</Filter>
+    </ClInclude>
+    <ClInclude Include="includes\ValveSDK\common\cvardef.h">
+      <Filter>includes\ValveSDK\common</Filter>
+    </ClInclude>
+    <ClInclude Include="includes\ValveSDK\common\dlight.h">
+      <Filter>includes\ValveSDK\common</Filter>
+    </ClInclude>
+    <ClInclude Include="includes\ValveSDK\common\entity_state.h">
+      <Filter>includes\ValveSDK\common</Filter>
+    </ClInclude>
+    <ClInclude Include="includes\ValveSDK\common\entity_types.h">
+      <Filter>includes\ValveSDK\common</Filter>
+    </ClInclude>
+    <ClInclude Include="includes\ValveSDK\common\enums.h">
+      <Filter>includes\ValveSDK\common</Filter>
+    </ClInclude>
+    <ClInclude Include="includes\ValveSDK\common\event_api.h">
+      <Filter>includes\ValveSDK\common</Filter>
+    </ClInclude>
+    <ClInclude Include="includes\ValveSDK\common\event_args.h">
+      <Filter>includes\ValveSDK\common</Filter>
+    </ClInclude>
+    <ClInclude Include="includes\ValveSDK\common\event_flags.h">
+      <Filter>includes\ValveSDK\common</Filter>
+    </ClInclude>
+    <ClInclude Include="includes\ValveSDK\common\hltv.h">
+      <Filter>includes\ValveSDK\common</Filter>
+    </ClInclude>
+    <ClInclude Include="includes\ValveSDK\common\IDemoPlayer.h">
+      <Filter>includes\ValveSDK\common</Filter>
+    </ClInclude>
+    <ClInclude Include="includes\ValveSDK\common\in_buttons.h">
+      <Filter>includes\ValveSDK\common</Filter>
+    </ClInclude>
+    <ClInclude Include="includes\ValveSDK\common\net_api.h">
+      <Filter>includes\ValveSDK\common</Filter>
+    </ClInclude>
+    <ClInclude Include="includes\ValveSDK\common\netadr.h">
+      <Filter>includes\ValveSDK\common</Filter>
+    </ClInclude>
+    <ClInclude Include="includes\ValveSDK\common\parsemsg.h">
+      <Filter>includes\ValveSDK\common</Filter>
+    </ClInclude>
+    <ClInclude Include="includes\ValveSDK\common\particledef.h">
+      <Filter>includes\ValveSDK\common</Filter>
+    </ClInclude>
+    <ClInclude Include="includes\ValveSDK\common\pmtrace.h">
+      <Filter>includes\ValveSDK\common</Filter>
+    </ClInclude>
+    <ClInclude Include="includes\ValveSDK\common\qlimits.h">
+      <Filter>includes\ValveSDK\common</Filter>
+    </ClInclude>
+    <ClInclude Include="includes\ValveSDK\common\quakedef.h">
+      <Filter>includes\ValveSDK\common</Filter>
+    </ClInclude>
+    <ClInclude Include="includes\ValveSDK\common\r_efx.h">
+      <Filter>includes\ValveSDK\common</Filter>
+    </ClInclude>
+    <ClInclude Include="includes\ValveSDK\common\r_studioint.h">
+      <Filter>includes\ValveSDK\common</Filter>
+    </ClInclude>
+    <ClInclude Include="includes\ValveSDK\common\ref_params.h">
+      <Filter>includes\ValveSDK\common</Filter>
+    </ClInclude>
+    <ClInclude Include="includes\ValveSDK\common\screenfade.h">
+      <Filter>includes\ValveSDK\common</Filter>
+    </ClInclude>
+    <ClInclude Include="includes\ValveSDK\common\Sequence.h">
+      <Filter>includes\ValveSDK\common</Filter>
+    </ClInclude>
+    <ClInclude Include="includes\ValveSDK\common\triangleapi.h">
+      <Filter>includes\ValveSDK\common</Filter>
+    </ClInclude>
+    <ClInclude Include="includes\ValveSDK\common\usercmd.h">
+      <Filter>includes\ValveSDK\common</Filter>
+    </ClInclude>
+    <ClInclude Include="includes\ValveSDK\common\vmodes.h">
+      <Filter>includes\ValveSDK\common</Filter>
+    </ClInclude>
+    <ClInclude Include="includes\ValveSDK\common\weaponinfo.h">
+      <Filter>includes\ValveSDK\common</Filter>
+    </ClInclude>
+    <ClInclude Include="includes\ValveSDK\dlls\activity.h">
+      <Filter>includes\ValveSDK\dlls</Filter>
+    </ClInclude>
+    <ClInclude Include="includes\ValveSDK\dlls\cdll_dll.h">
+      <Filter>includes\ValveSDK\dlls</Filter>
+    </ClInclude>
+    <ClInclude Include="includes\ValveSDK\dlls\player.h">
+      <Filter>includes\ValveSDK\dlls</Filter>
+    </ClInclude>
+    <ClInclude Include="includes\ValveSDK\dlls\weapons.h">
+      <Filter>includes\ValveSDK\dlls</Filter>
+    </ClInclude>
+    <ClInclude Include="includes\ValveSDK\dlls\weapontype.h">
+      <Filter>includes\ValveSDK\dlls</Filter>
+    </ClInclude>
+    <ClInclude Include="includes\ValveSDK\engine\archtypes.h">
+      <Filter>includes\ValveSDK\engine</Filter>
+    </ClInclude>
+    <ClInclude Include="includes\ValveSDK\engine\bspfile.h">
+      <Filter>includes\ValveSDK\engine</Filter>
+    </ClInclude>
+    <ClInclude Include="includes\ValveSDK\engine\cdll_int.h">
+      <Filter>includes\ValveSDK\engine</Filter>
+    </ClInclude>
+    <ClInclude Include="includes\ValveSDK\engine\client.h">
+      <Filter>includes\ValveSDK\engine</Filter>
+    </ClInclude>
+    <ClInclude Include="includes\ValveSDK\engine\common.h">
+      <Filter>includes\ValveSDK\engine</Filter>
+    </ClInclude>
+    <ClInclude Include="includes\ValveSDK\engine\consistency.h">
+      <Filter>includes\ValveSDK\engine</Filter>
+    </ClInclude>
+    <ClInclude Include="includes\ValveSDK\engine\custom.h">
+      <Filter>includes\ValveSDK\engine</Filter>
+    </ClInclude>
+    <ClInclude Include="includes\ValveSDK\engine\delta_packet.h">
+      <Filter>includes\ValveSDK\engine</Filter>
+    </ClInclude>
+    <ClInclude Include="includes\ValveSDK\engine\event.h">
+      <Filter>includes\ValveSDK\engine</Filter>
+    </ClInclude>
+    <ClInclude Include="includes\ValveSDK\engine\model.h">
+      <Filter>includes\ValveSDK\engine</Filter>
+    </ClInclude>
+    <ClInclude Include="includes\ValveSDK\engine\modelgen.h">
+      <Filter>includes\ValveSDK\engine</Filter>
+    </ClInclude>
+    <ClInclude Include="includes\ValveSDK\engine\net.h">
+      <Filter>includes\ValveSDK\engine</Filter>
+    </ClInclude>
+    <ClInclude Include="includes\ValveSDK\engine\progdefs.h">
+      <Filter>includes\ValveSDK\engine</Filter>
+    </ClInclude>
+    <ClInclude Include="includes\ValveSDK\engine\progs.h">
+      <Filter>includes\ValveSDK\engine</Filter>
+    </ClInclude>
+    <ClInclude Include="includes\ValveSDK\engine\sound.h">
+      <Filter>includes\ValveSDK\engine</Filter>
+    </ClInclude>
+    <ClInclude Include="includes\ValveSDK\engine\spritegn.h">
+      <Filter>includes\ValveSDK\engine</Filter>
+    </ClInclude>
+    <ClInclude Include="includes\ValveSDK\engine\studio.h">
+      <Filter>includes\ValveSDK\engine</Filter>
+    </ClInclude>
+    <ClInclude Include="includes\ValveSDK\gameui\IGameConsole.h">
+      <Filter>includes\ValveSDK\gameui</Filter>
+    </ClInclude>
+    <ClInclude Include="includes\ValveSDK\gameui\IGameUI.h">
+      <Filter>includes\ValveSDK\gameui</Filter>
+    </ClInclude>
+    <ClInclude Include="includes\ValveSDK\gameui\IRunGameEngine.h">
+      <Filter>includes\ValveSDK\gameui</Filter>
+    </ClInclude>
+    <ClInclude Include="includes\ValveSDK\gameui\IVGuiModuleLoader.h">
+      <Filter>includes\ValveSDK\gameui</Filter>
+    </ClInclude>
+    <ClInclude Include="includes\ValveSDK\pm_shared\pm_defs.h">
+      <Filter>includes\ValveSDK\pm_shared</Filter>
+    </ClInclude>
+    <ClInclude Include="includes\ValveSDK\pm_shared\pm_info.h">
+      <Filter>includes\ValveSDK\pm_shared</Filter>
+    </ClInclude>
+    <ClInclude Include="includes\ValveSDK\pm_shared\pm_materials.h">
+      <Filter>includes\ValveSDK\pm_shared</Filter>
+    </ClInclude>
+    <ClInclude Include="includes\ValveSDK\pm_shared\pm_movevars.h">
+      <Filter>includes\ValveSDK\pm_shared</Filter>
+    </ClInclude>
+    <ClInclude Include="includes\ValveSDK\pm_shared\pm_shared.h">
+      <Filter>includes\ValveSDK\pm_shared</Filter>
+    </ClInclude>
+    <ClInclude Include="includes\ValveSDK\public\steam\isteamapps.h">
+      <Filter>includes\ValveSDK\public\steam</Filter>
+    </ClInclude>
+    <ClInclude Include="includes\ValveSDK\public\steam\isteambilling.h">
+      <Filter>includes\ValveSDK\public\steam</Filter>
+    </ClInclude>
+    <ClInclude Include="includes\ValveSDK\public\steam\isteamclient.h">
+      <Filter>includes\ValveSDK\public\steam</Filter>
+    </ClInclude>
+    <ClInclude Include="includes\ValveSDK\public\steam\isteamcontroller.h">
+      <Filter>includes\ValveSDK\public\steam</Filter>
+    </ClInclude>
+    <ClInclude Include="includes\ValveSDK\public\steam\isteamfriends.h">
+      <Filter>includes\ValveSDK\public\steam</Filter>
+    </ClInclude>
+    <ClInclude Include="includes\ValveSDK\public\steam\isteamgameserver.h">
+      <Filter>includes\ValveSDK\public\steam</Filter>
+    </ClInclude>
+    <ClInclude Include="includes\ValveSDK\public\steam\isteamgameserverstats.h">
+      <Filter>includes\ValveSDK\public\steam</Filter>
+    </ClInclude>
+    <ClInclude Include="includes\ValveSDK\public\steam\isteamhttp.h">
+      <Filter>includes\ValveSDK\public\steam</Filter>
+    </ClInclude>
+    <ClInclude Include="includes\ValveSDK\public\steam\isteammatchmaking.h">
+      <Filter>includes\ValveSDK\public\steam</Filter>
+    </ClInclude>
+    <ClInclude Include="includes\ValveSDK\public\steam\isteamnetworking.h">
+      <Filter>includes\ValveSDK\public\steam</Filter>
+    </ClInclude>
+    <ClInclude Include="includes\ValveSDK\public\steam\isteamremotestorage.h">
+      <Filter>includes\ValveSDK\public\steam</Filter>
+    </ClInclude>
+    <ClInclude Include="includes\ValveSDK\public\steam\isteamscreenshots.h">
+      <Filter>includes\ValveSDK\public\steam</Filter>
+    </ClInclude>
+    <ClInclude Include="includes\ValveSDK\public\steam\isteamunifiedmessages.h">
+      <Filter>includes\ValveSDK\public\steam</Filter>
+    </ClInclude>
+    <ClInclude Include="includes\ValveSDK\public\steam\isteamuser.h">
+      <Filter>includes\ValveSDK\public\steam</Filter>
+    </ClInclude>
+    <ClInclude Include="includes\ValveSDK\public\steam\isteamuserstats.h">
+      <Filter>includes\ValveSDK\public\steam</Filter>
+    </ClInclude>
+    <ClInclude Include="includes\ValveSDK\public\steam\isteamutils.h">
+      <Filter>includes\ValveSDK\public\steam</Filter>
+    </ClInclude>
+    <ClInclude Include="includes\ValveSDK\public\steam\matchmakingtypes.h">
+      <Filter>includes\ValveSDK\public\steam</Filter>
+    </ClInclude>
+    <ClInclude Include="includes\ValveSDK\public\steam\steam_api.h">
+      <Filter>includes\ValveSDK\public\steam</Filter>
+    </ClInclude>
+    <ClInclude Include="includes\ValveSDK\public\steam\steam_gameserver.h">
+      <Filter>includes\ValveSDK\public\steam</Filter>
+    </ClInclude>
+    <ClInclude Include="includes\ValveSDK\public\steam\steamclientpublic.h">
+      <Filter>includes\ValveSDK\public\steam</Filter>
+    </ClInclude>
+    <ClInclude Include="includes\ValveSDK\public\steam\steamhttpenums.h">
+      <Filter>includes\ValveSDK\public\steam</Filter>
+    </ClInclude>
+    <ClInclude Include="includes\ValveSDK\public\steam\steamtypes.h">
+      <Filter>includes\ValveSDK\public\steam</Filter>
+    </ClInclude>
+    <ClInclude Include="includes\ValveSDK\public\keydefs.h">
+      <Filter>includes\ValveSDK\public</Filter>
+    </ClInclude>
+    <ClInclude Include="includes\ValveSDK\vgui\VGUI.h">
+      <Filter>includes\ValveSDK\vgui</Filter>
+    </ClInclude>
+    <ClInclude Include="includes\ValveSDK\vgui\VGUI_ActionSignal.h">
+      <Filter>includes\ValveSDK\vgui</Filter>
+    </ClInclude>
+    <ClInclude Include="includes\ValveSDK\vgui\VGUI_App.h">
+      <Filter>includes\ValveSDK\vgui</Filter>
+    </ClInclude>
+    <ClInclude Include="includes\ValveSDK\vgui\VGUI_Bitmap.h">
+      <Filter>includes\ValveSDK\vgui</Filter>
+    </ClInclude>
+    <ClInclude Include="includes\ValveSDK\vgui\VGUI_BitmapTGA.h">
+      <Filter>includes\ValveSDK\vgui</Filter>
+    </ClInclude>
+    <ClInclude Include="includes\ValveSDK\vgui\VGUI_Border.h">
+      <Filter>includes\ValveSDK\vgui</Filter>
+    </ClInclude>
+    <ClInclude Include="includes\ValveSDK\vgui\VGUI_BorderLayout.h">
+      <Filter>includes\ValveSDK\vgui</Filter>
+    </ClInclude>
+    <ClInclude Include="includes\ValveSDK\vgui\VGUI_BorderPair.h">
+      <Filter>includes\ValveSDK\vgui</Filter>
+    </ClInclude>
+    <ClInclude Include="includes\ValveSDK\vgui\VGUI_BuildGroup.h">
+      <Filter>includes\ValveSDK\vgui</Filter>
+    </ClInclude>
+    <ClInclude Include="includes\ValveSDK\vgui\VGUI_Button.h">
+      <Filter>includes\ValveSDK\vgui</Filter>
+    </ClInclude>
+    <ClInclude Include="includes\ValveSDK\vgui\VGUI_ButtonController.h">
+      <Filter>includes\ValveSDK\vgui</Filter>
+    </ClInclude>
+    <ClInclude Include="includes\ValveSDK\vgui\VGUI_ButtonGroup.h">
+      <Filter>includes\ValveSDK\vgui</Filter>
+    </ClInclude>
+    <ClInclude Include="includes\ValveSDK\vgui\VGUI_ChangeSignal.h">
+      <Filter>includes\ValveSDK\vgui</Filter>
+    </ClInclude>
+    <ClInclude Include="includes\ValveSDK\vgui\VGUI_CheckButton.h">
+      <Filter>includes\ValveSDK\vgui</Filter>
+    </ClInclude>
+    <ClInclude Include="includes\ValveSDK\vgui\VGUI_Color.h">
+      <Filter>includes\ValveSDK\vgui</Filter>
+    </ClInclude>
+    <ClInclude Include="includes\ValveSDK\vgui\VGUI_ComboKey.h">
+      <Filter>includes\ValveSDK\vgui</Filter>
+    </ClInclude>
+    <ClInclude Include="includes\ValveSDK\vgui\VGUI_ConfigWizard.h">
+      <Filter>includes\ValveSDK\vgui</Filter>
+    </ClInclude>
+    <ClInclude Include="includes\ValveSDK\vgui\VGUI_Cursor.h">
+      <Filter>includes\ValveSDK\vgui</Filter>
+    </ClInclude>
+    <ClInclude Include="includes\ValveSDK\vgui\VGUI_Dar.h">
+      <Filter>includes\ValveSDK\vgui</Filter>
+    </ClInclude>
+    <ClInclude Include="includes\ValveSDK\vgui\VGUI_DataInputStream.h">
+      <Filter>includes\ValveSDK\vgui</Filter>
+    </ClInclude>
+    <ClInclude Include="includes\ValveSDK\vgui\VGUI_Desktop.h">
+      <Filter>includes\ValveSDK\vgui</Filter>
+    </ClInclude>
+    <ClInclude Include="includes\ValveSDK\vgui\VGUI_DesktopIcon.h">
+      <Filter>includes\ValveSDK\vgui</Filter>
+    </ClInclude>
+    <ClInclude Include="includes\ValveSDK\vgui\VGUI_EditPanel.h">
+      <Filter>includes\ValveSDK\vgui</Filter>
+    </ClInclude>
+    <ClInclude Include="includes\ValveSDK\vgui\VGUI_EtchedBorder.h">
+      <Filter>includes\ValveSDK\vgui</Filter>
+    </ClInclude>
+    <ClInclude Include="includes\ValveSDK\vgui\VGUI_FileInputStream.h">
+      <Filter>includes\ValveSDK\vgui</Filter>
+    </ClInclude>
+    <ClInclude Include="includes\ValveSDK\vgui\VGUI_FlowLayout.h">
+      <Filter>includes\ValveSDK\vgui</Filter>
+    </ClInclude>
+    <ClInclude Include="includes\ValveSDK\vgui\VGUI_FocusChangeSignal.h">
+      <Filter>includes\ValveSDK\vgui</Filter>
+    </ClInclude>
+    <ClInclude Include="includes\ValveSDK\vgui\VGUI_FocusNavGroup.h">
+      <Filter>includes\ValveSDK\vgui</Filter>
+    </ClInclude>
+    <ClInclude Include="includes\ValveSDK\vgui\VGUI_Font.h">
+      <Filter>includes\ValveSDK\vgui</Filter>
+    </ClInclude>
+    <ClInclude Include="includes\ValveSDK\vgui\VGUI_Frame.h">
+      <Filter>includes\ValveSDK\vgui</Filter>
+    </ClInclude>
+    <ClInclude Include="includes\ValveSDK\vgui\VGUI_FrameSignal.h">
+      <Filter>includes\ValveSDK\vgui</Filter>
+    </ClInclude>
+    <ClInclude Include="includes\ValveSDK\vgui\VGUI_GridLayout.h">
+      <Filter>includes\ValveSDK\vgui</Filter>
+    </ClInclude>
+    <ClInclude Include="includes\ValveSDK\vgui\VGUI_HeaderPanel.h">
+      <Filter>includes\ValveSDK\vgui</Filter>
+    </ClInclude>
+    <ClInclude Include="includes\ValveSDK\vgui\VGUI_Image.h">
+      <Filter>includes\ValveSDK\vgui</Filter>
+    </ClInclude>
+    <ClInclude Include="includes\ValveSDK\vgui\VGUI_ImagePanel.h">
+      <Filter>includes\ValveSDK\vgui</Filter>
+    </ClInclude>
+    <ClInclude Include="includes\ValveSDK\vgui\VGUI_InputSignal.h">
+      <Filter>includes\ValveSDK\vgui</Filter>
+    </ClInclude>
+    <ClInclude Include="includes\ValveSDK\vgui\VGUI_InputStream.h">
+      <Filter>includes\ValveSDK\vgui</Filter>
+    </ClInclude>
+    <ClInclude Include="includes\ValveSDK\vgui\VGUI_IntChangeSignal.h">
+      <Filter>includes\ValveSDK\vgui</Filter>
+    </ClInclude>
+    <ClInclude Include="includes\ValveSDK\vgui\VGUI_IntLabel.h">
+      <Filter>includes\ValveSDK\vgui</Filter>
+    </ClInclude>
+    <ClInclude Include="includes\ValveSDK\vgui\VGUI_KeyCode.h">
+      <Filter>includes\ValveSDK\vgui</Filter>
+    </ClInclude>
+    <ClInclude Include="includes\ValveSDK\vgui\VGUI_Label.h">
+      <Filter>includes\ValveSDK\vgui</Filter>
+    </ClInclude>
+    <ClInclude Include="includes\ValveSDK\vgui\VGUI_Layout.h">
+      <Filter>includes\ValveSDK\vgui</Filter>
+    </ClInclude>
+    <ClInclude Include="includes\ValveSDK\vgui\VGUI_LayoutInfo.h">
+      <Filter>includes\ValveSDK\vgui</Filter>
+    </ClInclude>
+    <ClInclude Include="includes\ValveSDK\vgui\VGUI_LineBorder.h">
+      <Filter>includes\ValveSDK\vgui</Filter>
+    </ClInclude>
+    <ClInclude Include="includes\ValveSDK\vgui\VGUI_ListPanel.h">
+      <Filter>includes\ValveSDK\vgui</Filter>
+    </ClInclude>
+    <ClInclude Include="includes\ValveSDK\vgui\VGUI_LoweredBorder.h">
+      <Filter>includes\ValveSDK\vgui</Filter>
+    </ClInclude>
+    <ClInclude Include="includes\ValveSDK\vgui\VGUI_Menu.h">
+      <Filter>includes\ValveSDK\vgui</Filter>
+    </ClInclude>
+    <ClInclude Include="includes\ValveSDK\vgui\VGUI_MenuItem.h">
+      <Filter>includes\ValveSDK\vgui</Filter>
+    </ClInclude>
+    <ClInclude Include="includes\ValveSDK\vgui\VGUI_MenuSeparator.h">
+      <Filter>includes\ValveSDK\vgui</Filter>
+    </ClInclude>
+    <ClInclude Include="includes\ValveSDK\vgui\VGUI_MessageBox.h">
+      <Filter>includes\ValveSDK\vgui</Filter>
+    </ClInclude>
+    <ClInclude Include="includes\ValveSDK\vgui\VGUI_MiniApp.h">
+      <Filter>includes\ValveSDK\vgui</Filter>
+    </ClInclude>
+    <ClInclude Include="includes\ValveSDK\vgui\VGUI_MouseCode.h">
+      <Filter>includes\ValveSDK\vgui</Filter>
+    </ClInclude>
+    <ClInclude Include="includes\ValveSDK\vgui\VGUI_Panel.h">
+      <Filter>includes\ValveSDK\vgui</Filter>
+    </ClInclude>
+    <ClInclude Include="includes\ValveSDK\vgui\VGUI_Point.h">
+      <Filter>includes\ValveSDK\vgui</Filter>
+    </ClInclude>
+    <ClInclude Include="includes\ValveSDK\vgui\VGUI_PopupMenu.h">
+      <Filter>includes\ValveSDK\vgui</Filter>
+    </ClInclude>
+    <ClInclude Include="includes\ValveSDK\vgui\VGUI_ProgressBar.h">
+      <Filter>includes\ValveSDK\vgui</Filter>
+    </ClInclude>
+    <ClInclude Include="includes\ValveSDK\vgui\VGUI_RadioButton.h">
+      <Filter>includes\ValveSDK\vgui</Filter>
+    </ClInclude>
+    <ClInclude Include="includes\ValveSDK\vgui\VGUI_RaisedBorder.h">
+      <Filter>includes\ValveSDK\vgui</Filter>
+    </ClInclude>
+    <ClInclude Include="includes\ValveSDK\vgui\VGUI_RepaintSignal.h">
+      <Filter>includes\ValveSDK\vgui</Filter>
+    </ClInclude>
+    <ClInclude Include="includes\ValveSDK\vgui\VGUI_Scheme.h">
+      <Filter>includes\ValveSDK\vgui</Filter>
+    </ClInclude>
+    <ClInclude Include="includes\ValveSDK\vgui\VGUI_ScrollBar.h">
+      <Filter>includes\ValveSDK\vgui</Filter>
+    </ClInclude>
+    <ClInclude Include="includes\ValveSDK\vgui\VGUI_ScrollPanel.h">
+      <Filter>includes\ValveSDK\vgui</Filter>
+    </ClInclude>
+    <ClInclude Include="includes\ValveSDK\vgui\VGUI_Slider.h">
+      <Filter>includes\ValveSDK\vgui</Filter>
+    </ClInclude>
+    <ClInclude Include="includes\ValveSDK\vgui\VGUI_StackLayout.h">
+      <Filter>includes\ValveSDK\vgui</Filter>
+    </ClInclude>
+    <ClInclude Include="includes\ValveSDK\vgui\VGUI_String.h">
+      <Filter>includes\ValveSDK\vgui</Filter>
+    </ClInclude>
+    <ClInclude Include="includes\ValveSDK\vgui\VGUI_Surface.h">
+      <Filter>includes\ValveSDK\vgui</Filter>
+    </ClInclude>
+    <ClInclude Include="includes\ValveSDK\vgui\VGUI_SurfaceBase.h">
+      <Filter>includes\ValveSDK\vgui</Filter>
+    </ClInclude>
+    <ClInclude Include="includes\ValveSDK\vgui\VGUI_SurfaceGL.h">
+      <Filter>includes\ValveSDK\vgui</Filter>
+    </ClInclude>
+    <ClInclude Include="includes\ValveSDK\vgui\VGUI_TablePanel.h">
+      <Filter>includes\ValveSDK\vgui</Filter>
+    </ClInclude>
+    <ClInclude Include="includes\ValveSDK\vgui\VGUI_TabPanel.h">
+      <Filter>includes\ValveSDK\vgui</Filter>
+    </ClInclude>
+    <ClInclude Include="includes\ValveSDK\vgui\VGUI_TaskBar.h">
+      <Filter>includes\ValveSDK\vgui</Filter>
+    </ClInclude>
+    <ClInclude Include="includes\ValveSDK\vgui\VGUI_TextEntry.h">
+      <Filter>includes\ValveSDK\vgui</Filter>
+    </ClInclude>
+    <ClInclude Include="includes\ValveSDK\vgui\VGUI_TextGrid.h">
+      <Filter>includes\ValveSDK\vgui</Filter>
+    </ClInclude>
+    <ClInclude Include="includes\ValveSDK\vgui\VGUI_TextImage.h">
+      <Filter>includes\ValveSDK\vgui</Filter>
+    </ClInclude>
+    <ClInclude Include="includes\ValveSDK\vgui\VGUI_TextPanel.h">
+      <Filter>includes\ValveSDK\vgui</Filter>
+    </ClInclude>
+    <ClInclude Include="includes\ValveSDK\vgui\VGUI_TickSignal.h">
+      <Filter>includes\ValveSDK\vgui</Filter>
+    </ClInclude>
+    <ClInclude Include="includes\ValveSDK\vgui\VGUI_ToggleButton.h">
+      <Filter>includes\ValveSDK\vgui</Filter>
+    </ClInclude>
+    <ClInclude Include="includes\ValveSDK\vgui\VGUI_TreeFolder.h">
+      <Filter>includes\ValveSDK\vgui</Filter>
+    </ClInclude>
+    <ClInclude Include="includes\ValveSDK\vgui\VGUI_WizardPanel.h">
+      <Filter>includes\ValveSDK\vgui</Filter>
+    </ClInclude>
+    <ClInclude Include="includes\ValveSDK\vgui2\IEngineVGui.h">
+      <Filter>includes\ValveSDK\vgui2</Filter>
+    </ClInclude>
+    <ClInclude Include="includes\ValveSDK\vgui2\IHTML.h">
+      <Filter>includes\ValveSDK\vgui2</Filter>
+    </ClInclude>
+    <ClInclude Include="includes\ValveSDK\vgui2\IPanel.h">
+      <Filter>includes\ValveSDK\vgui2</Filter>
+    </ClInclude>
+    <ClInclude Include="includes\ValveSDK\vgui2\ISurface.h">
+      <Filter>includes\ValveSDK\vgui2</Filter>
+    </ClInclude>
+    <ClInclude Include="includes\ValveSDK\sdk.h">
+      <Filter>includes\ValveSDK</Filter>
+    </ClInclude>
+    <ClInclude Include="src\client.h">
+      <Filter>src</Filter>
+    </ClInclude>
+    <ClInclude Include="src\framework.h">
+      <Filter>src</Filter>
+    </ClInclude>
+    <ClInclude Include="src\hpp.h">
+      <Filter>src</Filter>
+    </ClInclude>
+    <ClInclude Include="src\targetver.h">
+      <Filter>src</Filter>
+    </ClInclude>
+    <ClInclude Include="includes\ImGui\imconfig.h">
+      <Filter>includes\ImGui</Filter>
+    </ClInclude>
+    <ClInclude Include="includes\ImGui\imgui.h">
+      <Filter>includes\ImGui</Filter>
+    </ClInclude>
+    <ClInclude Include="includes\ImGui\imgui_internal.h">
+      <Filter>includes\ImGui</Filter>
+    </ClInclude>
+    <ClInclude Include="includes\ImGui\imstb_rectpack.h">
+      <Filter>includes\ImGui</Filter>
+    </ClInclude>
+    <ClInclude Include="includes\ImGui\imstb_textedit.h">
+      <Filter>includes\ImGui</Filter>
+    </ClInclude>
+    <ClInclude Include="includes\ImGui\imstb_truetype.h">
+      <Filter>includes\ImGui</Filter>
+    </ClInclude>
+    <ClInclude Include="src\messages\usermsg.h">
+      <Filter>src\messages</Filter>
+    </ClInclude>
+    <ClInclude Include="includes\MinHook\MinHook.h">
+      <Filter>includes\MinHook</Filter>
+    </ClInclude>
+    <ClInclude Include="includes\MinHook\funchook.h">
+      <Filter>includes\MinHook</Filter>
+    </ClInclude>
+    <ClInclude Include="includes\ImGui\imgui_impl_opengl2.h">
+      <Filter>includes\ImGui</Filter>
+    </ClInclude>
+    <ClInclude Include="includes\ImGui\imgui_impl_win32.h">
+      <Filter>includes\ImGui</Filter>
+    </ClInclude>
+    <ClInclude Include="src\opengl.h">
+      <Filter>src</Filter>
+    </ClInclude>
+    <ClInclude Include="src\features\legitbot\legitbot.h">
+      <Filter>src\features\legitbot</Filter>
+    </ClInclude>
+    <ClInclude Include="src\world\baselocal.h">
+      <Filter>src\world</Filter>
+    </ClInclude>
+    <ClInclude Include="src\world\baseinfo.h">
+      <Filter>src\world</Filter>
+    </ClInclude>
+    <ClInclude Include="src\world\baseplayer.h">
+      <Filter>src\world</Filter>
+    </ClInclude>
+    <ClInclude Include="src\world\baseentity.h">
+      <Filter>src\world</Filter>
+    </ClInclude>
+    <ClInclude Include="src\tools\utils.h">
+      <Filter>src\tools</Filter>
+    </ClInclude>
+    <ClInclude Include="src\tools\math.h">
+      <Filter>src\tools</Filter>
+    </ClInclude>
+    <ClInclude Include="src\tools\game.h">
+      <Filter>src\tools</Filter>
+    </ClInclude>
+    <ClInclude Include="src\tools\physent.h">
+      <Filter>src\tools</Filter>
+    </ClInclude>
+    <ClInclude Include="src\tools\build.h">
+      <Filter>src\tools</Filter>
+    </ClInclude>
+    <ClInclude Include="src\common\cvars.h">
+      <Filter>src\common</Filter>
+    </ClInclude>
+    <ClInclude Include="src\common\globals.h">
+      <Filter>src\common</Filter>
+    </ClInclude>
+    <ClInclude Include="src\common\offsets.h">
+      <Filter>src\common</Filter>
+    </ClInclude>
+    <ClInclude Include="src\renderer\drawlist.h">
+      <Filter>src\renderer</Filter>
+    </ClInclude>
+    <ClInclude Include="src\renderer\renderer.h">
+      <Filter>src\renderer</Filter>
+    </ClInclude>
+    <ClInclude Include="src\world\baseweapon.h">
+      <Filter>src\world</Filter>
+    </ClInclude>
+    <ClInclude Include="includes\SimpleIni\ConvertUTF.h">
+      <Filter>includes\SimpleIni</Filter>
+    </ClInclude>
+    <ClInclude Include="includes\SimpleIni\SimpleIni.h">
+      <Filter>includes\SimpleIni</Filter>
+    </ClInclude>
+    <ClInclude Include="src\features\nospread\nospread.h">
+      <Filter>src\features\nospread</Filter>
+    </ClInclude>
+    <ClInclude Include="includes\Soil\glcorearb.h">
+      <Filter>includes\Soil</Filter>
+    </ClInclude>
+    <ClInclude Include="includes\Soil\image_DXT.h">
+      <Filter>includes\Soil</Filter>
+    </ClInclude>
+    <ClInclude Include="includes\Soil\image_helper.h">
+      <Filter>includes\Soil</Filter>
+    </ClInclude>
+    <ClInclude Include="includes\Soil\khrplatform.h">
+      <Filter>includes\Soil</Filter>
+    </ClInclude>
+    <ClInclude Include="includes\Soil\soil.h">
+      <Filter>includes\Soil</Filter>
+    </ClInclude>
+    <ClInclude Include="includes\Soil\stb_image_aug.h">
+      <Filter>includes\Soil</Filter>
+    </ClInclude>
+    <ClInclude Include="includes\Soil\stbi_DDS_aug.h">
+      <Filter>includes\Soil</Filter>
+    </ClInclude>
+    <ClInclude Include="includes\Soil\stbi_DDS_aug_c.h">
+      <Filter>includes\Soil</Filter>
+    </ClInclude>
+    <ClInclude Include="src\features\knifebot\knifebot.h">
+      <Filter>src\features\knifebot</Filter>
+    </ClInclude>
+    <ClInclude Include="includes\ImGui\imgui_user.h">
+      <Filter>includes\ImGui</Filter>
+    </ClInclude>
+    <ClInclude Include="src\overlay\images\menu\background_title.h">
+      <Filter>src\overlay\images\menu</Filter>
+    </ClInclude>
+    <ClInclude Include="src\overlay\images\menu\tab_configs_icon.h">
+      <Filter>src\overlay\images\menu</Filter>
+    </ClInclude>
+    <ClInclude Include="src\overlay\images\menu\tab_kreedz_icon.h">
+      <Filter>src\overlay\images\menu</Filter>
+    </ClInclude>
+    <ClInclude Include="src\overlay\images\menu\tab_legit_icon.h">
+      <Filter>src\overlay\images\menu</Filter>
+    </ClInclude>
+    <ClInclude Include="src\overlay\images\menu\tab_misc_icon.h">
+      <Filter>src\overlay\images\menu</Filter>
+    </ClInclude>
+    <ClInclude Include="src\overlay\images\menu\tab_rage_icon.h">
+      <Filter>src\overlay\images\menu</Filter>
+    </ClInclude>
+    <ClInclude Include="src\overlay\images\menu\tab_visuals_icon.h">
+      <Filter>src\overlay\images\menu</Filter>
+    </ClInclude>
+    <ClInclude Include="src\overlay\images\menu\wpn_pistols_icon.h">
+      <Filter>src\overlay\images\menu</Filter>
+    </ClInclude>
+    <ClInclude Include="src\overlay\images\menu\wpn_rifles_icon.h">
+      <Filter>src\overlay\images\menu</Filter>
+    </ClInclude>
+    <ClInclude Include="src\overlay\images\menu\wpn_snipers_icon.h">
+      <Filter>src\overlay\images\menu</Filter>
+    </ClInclude>
+    <ClInclude Include="src\overlay\images\menu\wpn_shotguns_icon.h">
+      <Filter>src\overlay\images\menu</Filter>
+    </ClInclude>
+    <ClInclude Include="src\overlay\images\menu\wpn_smgs_icon.h">
+      <Filter>src\overlay\images\menu</Filter>
+    </ClInclude>
+    <ClInclude Include="src\overlay\menu\menu.h">
+      <Filter>src\overlay\menu</Filter>
+    </ClInclude>
+    <ClInclude Include="includes\VMProtectSDK\VMProtectSDK.h">
+      <Filter>includes\VMProtectSDK</Filter>
+    </ClInclude>
+    <ClInclude Include="src\world\sequences.h">
+      <Filter>src\world</Filter>
+    </ClInclude>
+    <ClInclude Include="src\features\miscellaneous\miscellaneous.h">
+      <Filter>src\features\miscellaneous</Filter>
+    </ClInclude>
+    <ClInclude Include="src\features\ragebot\ragebot.h">
+      <Filter>src\features\ragebot</Filter>
+    </ClInclude>
+    <ClInclude Include="src\messages\enginemsg.h">
+      <Filter>src\messages</Filter>
+    </ClInclude>
+    <ClInclude Include="src\overlay\notifications\notifications.h">
+      <Filter>src\overlay\notifications</Filter>
+    </ClInclude>
+    <ClInclude Include="src\overlay\menu\common\menu_hotkeys.h">
+      <Filter>src\overlay\menu\common</Filter>
+    </ClInclude>
+    <ClInclude Include="src\overlay\menu\common\menu_settings_list.h">
+      <Filter>src\overlay\menu\common</Filter>
+    </ClInclude>
+    <ClInclude Include="src\overlay\menu\gui\menu_fade_bg.h">
+      <Filter>src\overlay\menu\gui</Filter>
+    </ClInclude>
+    <ClInclude Include="src\overlay\menu\gui\menu_gui.h">
+      <Filter>src\overlay\menu\gui</Filter>
+    </ClInclude>
+    <ClInclude Include="src\overlay\menu\gui\menu_popup_modal.h">
+      <Filter>src\overlay\menu\gui</Filter>
+    </ClInclude>
+    <ClInclude Include="src\overlay\menu\gui\menu_themes.h">
+      <Filter>src\overlay\menu\gui</Filter>
+    </ClInclude>
+    <ClInclude Include="src\features\visuals\visuals.h">
+      <Filter>src\features\visuals</Filter>
+    </ClInclude>
+    <ClInclude Include="src\overlay\images\weapons\weapon_ak47.h">
+      <Filter>src\overlay\images\weapons</Filter>
+    </ClInclude>
+    <ClInclude Include="src\overlay\images\weapons\weapon_aug.h">
+      <Filter>src\overlay\images\weapons</Filter>
+    </ClInclude>
+    <ClInclude Include="src\overlay\images\weapons\weapon_awp.h">
+      <Filter>src\overlay\images\weapons</Filter>
+    </ClInclude>
+    <ClInclude Include="src\overlay\images\weapons\weapon_c4.h">
+      <Filter>src\overlay\images\weapons</Filter>
+    </ClInclude>
+    <ClInclude Include="src\overlay\images\weapons\weapon_deagle.h">
+      <Filter>src\overlay\images\weapons</Filter>
+    </ClInclude>
+    <ClInclude Include="src\overlay\images\weapons\weapon_elite.h">
+      <Filter>src\overlay\images\weapons</Filter>
+    </ClInclude>
+    <ClInclude Include="src\overlay\images\weapons\weapon_famas.h">
+      <Filter>src\overlay\images\weapons</Filter>
+    </ClInclude>
+    <ClInclude Include="src\overlay\images\weapons\weapon_fiveseven.h">
+      <Filter>src\overlay\images\weapons</Filter>
+    </ClInclude>
+    <ClInclude Include="src\overlay\images\weapons\weapon_flashbang.h">
+      <Filter>src\overlay\images\weapons</Filter>
+    </ClInclude>
+    <ClInclude Include="src\overlay\images\weapons\weapon_g3sg1.h">
+      <Filter>src\overlay\images\weapons</Filter>
+    </ClInclude>
+    <ClInclude Include="src\overlay\images\weapons\weapon_galil.h">
+      <Filter>src\overlay\images\weapons</Filter>
+    </ClInclude>
+    <ClInclude Include="src\overlay\images\weapons\weapon_glock18.h">
+      <Filter>src\overlay\images\weapons</Filter>
+    </ClInclude>
+    <ClInclude Include="src\overlay\images\weapons\weapon_hegrenade.h">
+      <Filter>src\overlay\images\weapons</Filter>
+    </ClInclude>
+    <ClInclude Include="src\overlay\images\weapons\weapon_knife.h">
+      <Filter>src\overlay\images\weapons</Filter>
+    </ClInclude>
+    <ClInclude Include="src\overlay\images\weapons\weapon_m4a1.h">
+      <Filter>src\overlay\images\weapons</Filter>
+    </ClInclude>
+    <ClInclude Include="src\overlay\images\weapons\weapon_m249.h">
+      <Filter>src\overlay\images\weapons</Filter>
+    </ClInclude>
+    <ClInclude Include="src\overlay\images\weapons\weapon_mac10.h">
+      <Filter>src\overlay\images\weapons</Filter>
+    </ClInclude>
+    <ClInclude Include="src\overlay\images\weapons\weapon_tmp.h">
+      <Filter>src\overlay\images\weapons</Filter>
+    </ClInclude>
+    <ClInclude Include="src\overlay\images\weapons\weapon_mp5.h">
+      <Filter>src\overlay\images\weapons</Filter>
+    </ClInclude>
+    <ClInclude Include="src\overlay\images\weapons\weapon_m3.h">
+      <Filter>src\overlay\images\weapons</Filter>
+    </ClInclude>
+    <ClInclude Include="src\overlay\images\weapons\weapon_p90.h">
+      <Filter>src\overlay\images\weapons</Filter>
+    </ClInclude>
+    <ClInclude Include="src\overlay\images\weapons\weapon_p228.h">
+      <Filter>src\overlay\images\weapons</Filter>
+    </ClInclude>
+    <ClInclude Include="src\overlay\images\weapons\weapon_sg550.h">
+      <Filter>src\overlay\images\weapons</Filter>
+    </ClInclude>
+    <ClInclude Include="src\overlay\images\weapons\weapon_sg552.h">
+      <Filter>src\overlay\images\weapons</Filter>
+    </ClInclude>
+    <ClInclude Include="src\overlay\images\weapons\weapon_smokegrenade.h">
+      <Filter>src\overlay\images\weapons</Filter>
+    </ClInclude>
+    <ClInclude Include="src\overlay\images\weapons\weapon_scout.h">
+      <Filter>src\overlay\images\weapons</Filter>
+    </ClInclude>
+    <ClInclude Include="src\overlay\images\weapons\weapon_ump45.h">
+      <Filter>src\overlay\images\weapons</Filter>
+    </ClInclude>
+    <ClInclude Include="src\overlay\images\weapons\weapon_usp.h">
+      <Filter>src\overlay\images\weapons</Filter>
+    </ClInclude>
+    <ClInclude Include="src\overlay\images\weapons\weapon_xm1014.h">
+      <Filter>src\overlay\images\weapons</Filter>
+    </ClInclude>
+    <ClInclude Include="src\common\cmds.h">
+      <Filter>src\common</Filter>
+    </ClInclude>
+    <ClInclude Include="src\features\miscellaneous\sandbox.h">
+      <Filter>src\features\miscellaneous</Filter>
+    </ClInclude>
+    <ClInclude Include="src\features\sound\sound.h">
+      <Filter>src\features\sound</Filter>
+    </ClInclude>
+    <ClInclude Include="src\math\matrix3x4.h">
+      <Filter>src\math</Filter>
+    </ClInclude>
+    <ClInclude Include="src\world\hud_player_info.h">
+      <Filter>src\world</Filter>
+    </ClInclude>
+    <ClInclude Include="src\world\extra_player_info.h">
+      <Filter>src\world</Filter>
+    </ClInclude>
+    <ClInclude Include="src\features\miscellaneous\revemu.h">
+      <Filter>src\features\miscellaneous</Filter>
+    </ClInclude>
+    <ClInclude Include="src\features\visuals\crosshair\default_crosshair.h">
+      <Filter>src\features\visuals\crosshair</Filter>
+    </ClInclude>
+    <ClInclude Include="src\overlay\images\defuser\defuser.h">
+      <Filter>src\overlay\images\defuser</Filter>
+    </ClInclude>
+    <ClInclude Include="src\common\settings.h">
+      <Filter>src\common</Filter>
+    </ClInclude>
+    <ClInclude Include="includes\ValveSDK\gameui\IGameUIFuncs.h">
+      <Filter>includes\ValveSDK\gameui</Filter>
+    </ClInclude>
+    <ClInclude Include="src\features\visuals\chams\chams_players.h">
+      <Filter>src\features\visuals\chams</Filter>
+    </ClInclude>
+    <ClInclude Include="src\features\visuals\chams\render_models.h">
+      <Filter>src\features\visuals\chams</Filter>
+    </ClInclude>
+    <ClInclude Include="src\features\visuals\chams\chams_desync_aa.h">
+      <Filter>src\features\visuals\chams</Filter>
+    </ClInclude>
+    <ClInclude Include="src\features\visuals\chams\chams_backtrack.h">
+      <Filter>src\features\visuals\chams</Filter>
+    </ClInclude>
+    <ClInclude Include="src\features\visuals\chams\chams_hands.h">
+      <Filter>src\features\visuals\chams</Filter>
+    </ClInclude>
+    <ClInclude Include="src\features\visuals\light\dlight.h">
+      <Filter>src\features\visuals\light</Filter>
+    </ClInclude>
+    <ClInclude Include="src\features\visuals\light\elight.h">
+      <Filter>src\features\visuals\light</Filter>
+    </ClInclude>
+    <ClInclude Include="src\world\hitregister.h">
+      <Filter>src\world</Filter>
+    </ClInclude>
+    <ClInclude Include="src\features\visuals\chams\chams_hit_position.h">
+      <Filter>src\features\visuals\chams</Filter>
+    </ClInclude>
+    <ClInclude Include="src\features\visuals\overlay\draw_local.h">
+      <Filter>src\features\visuals\overlay</Filter>
+    </ClInclude>
+    <ClInclude Include="src\features\visuals\overlay\draw_players.h">
+      <Filter>src\features\visuals\overlay</Filter>
+    </ClInclude>
+    <ClInclude Include="src\features\visuals\overlay\draw_players_out_of_fov.h">
+      <Filter>src\features\visuals\overlay</Filter>
+    </ClInclude>
+    <ClInclude Include="src\features\visuals\overlay\draw_players_sound.h">
+      <Filter>src\features\visuals\overlay</Filter>
+    </ClInclude>
+    <ClInclude Include="src\features\visuals\overlay\draw_world.h">
+      <Filter>src\features\visuals\overlay</Filter>
+    </ClInclude>
+    <ClInclude Include="src\features\visuals\overlay\selection_players.h">
+      <Filter>src\features\visuals\overlay</Filter>
+    </ClInclude>
+    <ClInclude Include="includes\VmtHook\VmtHook.h">
+      <Filter>includes\VmtHook</Filter>
+    </ClInclude>
+    <ClInclude Include="src\overlay\images\menu\tab_console_icon.h">
+      <Filter>src\overlay\images\menu</Filter>
+    </ClInclude>
+    <ClInclude Include="src\features\visuals\glow\glow_players.h">
+      <Filter>src\features\visuals\glow</Filter>
+    </ClInclude>
+    <ClInclude Include="src\features\kreedz\kreedz.h">
+      <Filter>src\features\kreedz</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="src\math\qangle.cpp">
+      <Filter>src\math</Filter>
+    </ClCompile>
+    <ClCompile Include="src\math\vector.cpp">
+      <Filter>src\math</Filter>
+    </ClCompile>
+    <ClCompile Include="includes\ValveSDK\sdk.cpp">
+      <Filter>includes\ValveSDK</Filter>
+    </ClCompile>
+    <ClCompile Include="src\client.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\framework.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\hpp.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="includes\ImGui\imgui.cpp">
+      <Filter>includes\ImGui</Filter>
+    </ClCompile>
+    <ClCompile Include="includes\ImGui\imgui_draw.cpp">
+      <Filter>includes\ImGui</Filter>
+    </ClCompile>
+    <ClCompile Include="includes\ImGui\imgui_widgets.cpp">
+      <Filter>includes\ImGui</Filter>
+    </ClCompile>
+    <ClCompile Include="src\messages\usermsg.cpp">
+      <Filter>src\messages</Filter>
+    </ClCompile>
+    <ClCompile Include="includes\ImGui\imgui_impl_opengl2.cpp">
+      <Filter>includes\ImGui</Filter>
+    </ClCompile>
+    <ClCompile Include="includes\ImGui\imgui_impl_win32.cpp">
+      <Filter>includes\ImGui</Filter>
+    </ClCompile>
+    <ClCompile Include="src\opengl.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\features\legitbot\legitbot.cpp">
+      <Filter>src\features\legitbot</Filter>
+    </ClCompile>
+    <ClCompile Include="src\world\baselocal.cpp">
+      <Filter>src\world</Filter>
+    </ClCompile>
+    <ClCompile Include="src\world\baseplayer.cpp">
+      <Filter>src\world</Filter>
+    </ClCompile>
+    <ClCompile Include="src\world\baseentity.cpp">
+      <Filter>src\world</Filter>
+    </ClCompile>
+    <ClCompile Include="src\tools\utils.cpp">
+      <Filter>src\tools</Filter>
+    </ClCompile>
+    <ClCompile Include="src\tools\math.cpp">
+      <Filter>src\tools</Filter>
+    </ClCompile>
+    <ClCompile Include="src\tools\game.cpp">
+      <Filter>src\tools</Filter>
+    </ClCompile>
+    <ClCompile Include="src\tools\physent.cpp">
+      <Filter>src\tools</Filter>
+    </ClCompile>
+    <ClCompile Include="src\common\globals.cpp">
+      <Filter>src\common</Filter>
+    </ClCompile>
+    <ClCompile Include="src\common\offsets.cpp">
+      <Filter>src\common</Filter>
+    </ClCompile>
+    <ClCompile Include="src\renderer\drawlist.cpp">
+      <Filter>src\renderer</Filter>
+    </ClCompile>
+    <ClCompile Include="src\renderer\renderer.cpp">
+      <Filter>src\renderer</Filter>
+    </ClCompile>
+    <ClCompile Include="src\world\baseweapon.cpp">
+      <Filter>src\world</Filter>
+    </ClCompile>
+    <ClCompile Include="src\common\cvars.cpp">
+      <Filter>src\common</Filter>
+    </ClCompile>
+    <ClCompile Include="includes\SimpleIni\ConvertUTF.cpp">
+      <Filter>includes\SimpleIni</Filter>
+    </ClCompile>
+    <ClCompile Include="src\features\nospread\nospread.cpp">
+      <Filter>src\features\nospread</Filter>
+    </ClCompile>
+    <ClCompile Include="includes\Soil\image_DXT.cpp">
+      <Filter>includes\Soil</Filter>
+    </ClCompile>
+    <ClCompile Include="includes\Soil\image_helper.cpp">
+      <Filter>includes\Soil</Filter>
+    </ClCompile>
+    <ClCompile Include="includes\Soil\soil.cpp">
+      <Filter>includes\Soil</Filter>
+    </ClCompile>
+    <ClCompile Include="includes\Soil\stb_image_aug.cpp">
+      <Filter>includes\Soil</Filter>
+    </ClCompile>
+    <ClCompile Include="src\features\knifebot\knifebot.cpp">
+      <Filter>src\features\knifebot</Filter>
+    </ClCompile>
+    <ClCompile Include="includes\ImGui\imgui_widgets_custom.cpp">
+      <Filter>includes\ImGui</Filter>
+    </ClCompile>
+    <ClCompile Include="src\overlay\menu\menu.cpp">
+      <Filter>src\overlay\menu</Filter>
+    </ClCompile>
+    <ClCompile Include="src\world\sequences.cpp">
+      <Filter>src\world</Filter>
+    </ClCompile>
+    <ClCompile Include="src\features\miscellaneous\miscellaneous.cpp">
+      <Filter>src\features\miscellaneous</Filter>
+    </ClCompile>
+    <ClCompile Include="src\overlay\menu\menu_draw.cpp">
+      <Filter>src\overlay\menu</Filter>
+    </ClCompile>
+    <ClCompile Include="src\features\ragebot\ragebot.cpp">
+      <Filter>src\features\ragebot</Filter>
+    </ClCompile>
+    <ClCompile Include="src\messages\enginemsg.cpp">
+      <Filter>src\messages</Filter>
+    </ClCompile>
+    <ClCompile Include="src\overlay\notifications\notifications.cpp">
+      <Filter>src\overlay\notifications</Filter>
+    </ClCompile>
+    <ClCompile Include="src\overlay\menu\common\menu_hotkeys.cpp">
+      <Filter>src\overlay\menu\common</Filter>
+    </ClCompile>
+    <ClCompile Include="src\overlay\menu\common\menu_settings_list.cpp">
+      <Filter>src\overlay\menu\common</Filter>
+    </ClCompile>
+    <ClCompile Include="src\overlay\menu\gui\menu_fade_bg.cpp">
+      <Filter>src\overlay\menu\gui</Filter>
+    </ClCompile>
+    <ClCompile Include="src\overlay\menu\gui\menu_gui.cpp">
+      <Filter>src\overlay\menu\gui</Filter>
+    </ClCompile>
+    <ClCompile Include="src\overlay\menu\gui\menu_popup_modal.cpp">
+      <Filter>src\overlay\menu\gui</Filter>
+    </ClCompile>
+    <ClCompile Include="src\overlay\menu\gui\menu_themes.cpp">
+      <Filter>src\overlay\menu\gui</Filter>
+    </ClCompile>
+    <ClCompile Include="src\features\visuals\visuals.cpp">
+      <Filter>src\features\visuals</Filter>
+    </ClCompile>
+    <ClCompile Include="src\common\cmds.cpp">
+      <Filter>src\common</Filter>
+    </ClCompile>
+    <ClCompile Include="src\features\miscellaneous\sandbox.cpp">
+      <Filter>src\features\miscellaneous</Filter>
+    </ClCompile>
+    <ClCompile Include="src\overlay\glscreenupdate.cpp">
+      <Filter>src\overlay</Filter>
+    </ClCompile>
+    <ClCompile Include="src\features\sound\sound.cpp">
+      <Filter>src\features\sound</Filter>
+    </ClCompile>
+    <ClCompile Include="src\overlay\menu\menu_draw_visuals.cpp">
+      <Filter>src\overlay\menu</Filter>
+    </ClCompile>
+    <ClCompile Include="src\world\hud_player_info.cpp">
+      <Filter>src\world</Filter>
+    </ClCompile>
+    <ClCompile Include="src\world\extra_player_info.cpp">
+      <Filter>src\world</Filter>
+    </ClCompile>
+    <ClCompile Include="src\features\miscellaneous\revemu.cpp">
+      <Filter>src\features\miscellaneous</Filter>
+    </ClCompile>
+    <ClCompile Include="src\features\visuals\crosshair\default_crosshair.cpp">
+      <Filter>src\features\visuals\crosshair</Filter>
+    </ClCompile>
+    <ClCompile Include="src\common\settings.cpp">
+      <Filter>src\common</Filter>
+    </ClCompile>
+    <ClCompile Include="src\features\visuals\chams\chams_players.cpp">
+      <Filter>src\features\visuals\chams</Filter>
+    </ClCompile>
+    <ClCompile Include="src\features\visuals\chams\render_models.cpp">
+      <Filter>src\features\visuals\chams</Filter>
+    </ClCompile>
+    <ClCompile Include="src\features\visuals\chams\chams_desync_aa.cpp">
+      <Filter>src\features\visuals\chams</Filter>
+    </ClCompile>
+    <ClCompile Include="src\features\visuals\chams\chams_backtrack.cpp">
+      <Filter>src\features\visuals\chams</Filter>
+    </ClCompile>
+    <ClCompile Include="src\features\visuals\chams\chams_hands.cpp">
+      <Filter>src\features\visuals\chams</Filter>
+    </ClCompile>
+    <ClCompile Include="src\features\visuals\light\dlight.cpp">
+      <Filter>src\features\visuals\light</Filter>
+    </ClCompile>
+    <ClCompile Include="src\features\visuals\light\elight.cpp">
+      <Filter>src\features\visuals\light</Filter>
+    </ClCompile>
+    <ClCompile Include="src\world\hitregister.cpp">
+      <Filter>src\world</Filter>
+    </ClCompile>
+    <ClCompile Include="src\features\visuals\chams\chams_hit_position.cpp">
+      <Filter>src\features\visuals\chams</Filter>
+    </ClCompile>
+    <ClCompile Include="src\features\visuals\overlay\draw_local.cpp">
+      <Filter>src\features\visuals\overlay</Filter>
+    </ClCompile>
+    <ClCompile Include="src\features\visuals\overlay\draw_players.cpp">
+      <Filter>src\features\visuals\overlay</Filter>
+    </ClCompile>
+    <ClCompile Include="src\features\visuals\overlay\draw_players_out_of_fov.cpp">
+      <Filter>src\features\visuals\overlay</Filter>
+    </ClCompile>
+    <ClCompile Include="src\features\visuals\overlay\draw_players_sound.cpp">
+      <Filter>src\features\visuals\overlay</Filter>
+    </ClCompile>
+    <ClCompile Include="src\features\visuals\overlay\draw_world.cpp">
+      <Filter>src\features\visuals\overlay</Filter>
+    </ClCompile>
+    <ClCompile Include="src\features\visuals\overlay\selection_players.cpp">
+      <Filter>src\features\visuals\overlay</Filter>
+    </ClCompile>
+    <ClCompile Include="includes\VmtHook\VmtHook.cpp">
+      <Filter>includes\VmtHook</Filter>
+    </ClCompile>
+    <ClCompile Include="src\overlay\menu\menu_draw_rage.cpp">
+      <Filter>src\overlay\menu</Filter>
+    </ClCompile>
+    <ClCompile Include="src\overlay\menu\menu_draw_legit.cpp">
+      <Filter>src\overlay\menu</Filter>
+    </ClCompile>
+    <ClCompile Include="includes\ImGui\imgui_demo.cpp">
+      <Filter>includes\ImGui</Filter>
+    </ClCompile>
+    <ClCompile Include="src\features\visuals\glow\glow_players.cpp">
+      <Filter>src\features\visuals\glow</Filter>
+    </ClCompile>
+    <ClCompile Include="src\features\kreedz\kreedz.cpp">
+      <Filter>src\features\kreedz</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="includes">
+      <UniqueIdentifier>{ddd2d1e4-a6e4-48cf-9cab-237c4818c018}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="includes\ValveSDK">
+      <UniqueIdentifier>{a1c76b29-02e2-41f2-b3ed-b810d7e280ca}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="includes\ValveSDK\common">
+      <UniqueIdentifier>{2206b051-4245-40cd-ade1-6b61ce319dd7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="includes\ValveSDK\dlls">
+      <UniqueIdentifier>{9c9206dc-3ef3-4319-9124-76fe250a39ee}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="includes\ValveSDK\engine">
+      <UniqueIdentifier>{42bd8730-7910-4920-8036-83553383bb7a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="includes\ValveSDK\public">
+      <UniqueIdentifier>{d7409d7c-9ec1-4325-8c18-55501cda13b3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="includes\ValveSDK\public\steam">
+      <UniqueIdentifier>{27b22af8-697c-4e87-8df0-36e48429db37}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="includes\ValveSDK\vgui">
+      <UniqueIdentifier>{c41ba1d0-73db-48cc-a0cc-62b13fbacc5b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="includes\ValveSDK\vgui2">
+      <UniqueIdentifier>{48dc18e2-d440-4592-8b66-1bbe7021ea63}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="includes\ValveSDK\gameui">
+      <UniqueIdentifier>{d4305afe-2030-43af-85bd-3e4f49a2af5e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="includes\ValveSDK\pm_shared">
+      <UniqueIdentifier>{a284cbae-7afb-4151-adef-15e5f1f55dcd}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src">
+      <UniqueIdentifier>{c90a1ca1-2185-488d-bd95-ee45e519f719}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\world">
+      <UniqueIdentifier>{d2fcd266-ba2e-4b89-a6d0-9313a309ec2f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\math">
+      <UniqueIdentifier>{fa4da31e-61c1-4f80-8543-353f0897ec69}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="includes\ImGui">
+      <UniqueIdentifier>{cba07238-e3c6-4663-b75c-37d12fbb7edd}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="includes\MinHook">
+      <UniqueIdentifier>{8849367d-5fe9-4426-9339-30490a9b46b0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\features">
+      <UniqueIdentifier>{909b8300-bc2d-4537-ad70-bdc86440ab2f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\features\legitbot">
+      <UniqueIdentifier>{2d30731c-21a6-441f-a487-718df285f12b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\tools">
+      <UniqueIdentifier>{6e2ea6ba-d2b4-4a55-8385-59de3420ec68}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\common">
+      <UniqueIdentifier>{820610e2-974c-459b-920a-4e50f4db9f23}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\renderer">
+      <UniqueIdentifier>{7caa357b-5f8e-4371-99e1-18b98ede6e2e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="includes\SimpleIni">
+      <UniqueIdentifier>{61bba6e6-efe9-498f-9008-dcc5159a4c10}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\features\nospread">
+      <UniqueIdentifier>{0891a059-9b80-42f6-9125-617ff2bf7179}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\overlay">
+      <UniqueIdentifier>{39a5b571-72ff-42a3-9188-f4789065dc5b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="includes\Soil">
+      <UniqueIdentifier>{1264625c-1d1e-4d0c-8f14-ab6d497e3449}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\features\knifebot">
+      <UniqueIdentifier>{f0f104fd-2a0d-4e37-b539-9219452c48e7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\overlay\images">
+      <UniqueIdentifier>{4579cab8-c624-43bc-bab2-f86048ac1626}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\overlay\images\menu">
+      <UniqueIdentifier>{d48f8793-c067-46e7-abc1-ebc6cf034ac3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\overlay\menu">
+      <UniqueIdentifier>{2da3c2b6-3669-40dd-b39a-6b8dccf4f369}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="includes\VMProtectSDK">
+      <UniqueIdentifier>{516bcb5b-dc6c-486f-94c4-87a770ae3efe}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\features\miscellaneous">
+      <UniqueIdentifier>{44de67ca-3406-4aab-8186-ebd3905ec45b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\features\ragebot">
+      <UniqueIdentifier>{dbb7cf1f-7149-4621-9c25-78c36f58cd4b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\overlay\notifications">
+      <UniqueIdentifier>{15de6d5c-600e-4baf-9911-6d586c96871a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\overlay\menu\gui">
+      <UniqueIdentifier>{87e603d2-1d9f-4739-b2d3-0f89927d068a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\overlay\menu\common">
+      <UniqueIdentifier>{c30d52b7-bc3b-4621-bf7c-b2b321a8319c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\features\visuals">
+      <UniqueIdentifier>{b0956f15-b19c-4236-9eb4-45bfa5c62d94}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\overlay\images\weapons">
+      <UniqueIdentifier>{3ca07719-cd99-4045-ba89-f87198c1aa5b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\messages">
+      <UniqueIdentifier>{227d873c-473f-49cb-84a0-84896092b244}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\features\sound">
+      <UniqueIdentifier>{116aeeeb-0389-4891-a759-d9f154b4b109}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\features\visuals\crosshair">
+      <UniqueIdentifier>{096b6673-3796-4319-9ec8-eabe90fb4702}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\overlay\images\defuser">
+      <UniqueIdentifier>{67c8022a-e2ed-4929-ab03-df8ca630050e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\features\visuals\chams">
+      <UniqueIdentifier>{d6c9903e-27c9-4822-8493-f258806b6f0f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\features\visuals\light">
+      <UniqueIdentifier>{dccbd138-dba0-4356-a75e-b1e2151acefc}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\features\visuals\glow">
+      <UniqueIdentifier>{180565c0-c62e-4662-9f91-d0f48c15c86b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\features\visuals\overlay">
+      <UniqueIdentifier>{d4863ed0-6e45-4f0d-8185-ec898ff5717b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="includes\VmtHook">
+      <UniqueIdentifier>{f193f78e-25db-47f6-90d9-9480231de430}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\features\kreedz">
+      <UniqueIdentifier>{a0503e7b-c613-426d-8e0c-d339c6934b43}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

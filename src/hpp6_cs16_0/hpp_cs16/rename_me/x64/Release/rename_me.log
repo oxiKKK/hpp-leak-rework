@@ -1,0 +1,61 @@
+﻿  build.cpp
+  window.cpp
+f:\source\repos\hack\hack.ovh\rename_me\window.cpp(26): warning C4267: аргумент: преобразование из "size_t" в "int"; возможна потеря данных
+  imgui.cpp
+  imgui_draw.cpp
+  imgui_impl_dx9.cpp
+  license.cpp
+f:\source\repos\hack\hack.ovh\rename_me\license.cpp(40): warning C4244: аргумент: преобразование "__int64" в "const _Elem", возможна потеря данных
+          with
+          [
+              _Elem=char
+          ]
+f:\source\repos\hack\hack.ovh\rename_me\license.cpp(124): error C2561: GetHardwareID: функция должна возвращать значение
+  f:\source\repos\hack\hack.ovh\rename_me\license.cpp(117): note:  см. объявление "GetHardwareID"
+f:\source\repos\hack\hack.ovh\rename_me\license.cpp(130): error C2561: GetHardwareID: функция должна возвращать значение
+  f:\source\repos\hack\hack.ovh\rename_me\license.cpp(117): note:  см. объявление "GetHardwareID"
+f:\source\repos\hack\hack.ovh\rename_me\license.cpp(136): error C2561: GetHardwareID: функция должна возвращать значение
+  f:\source\repos\hack\hack.ovh\rename_me\license.cpp(117): note:  см. объявление "GetHardwareID"
+f:\source\repos\hack\hack.ovh\rename_me\license.cpp(141): error C2561: GetHardwareID: функция должна возвращать значение
+  f:\source\repos\hack\hack.ovh\rename_me\license.cpp(117): note:  см. объявление "GetHardwareID"
+f:\source\repos\hack\hack.ovh\rename_me\license.cpp(147): error C2561: GetHardwareID: функция должна возвращать значение
+  f:\source\repos\hack\hack.ovh\rename_me\license.cpp(117): note:  см. объявление "GetHardwareID"
+f:\source\repos\hack\hack.ovh\rename_me\license.cpp(182): error C2561: GetHardwareID: функция должна возвращать значение
+  f:\source\repos\hack\hack.ovh\rename_me\license.cpp(117): note:  см. объявление "GetHardwareID"
+f:\source\repos\hack\hack.ovh\rename_me\license.cpp(211): error C2561: GetHardwareID: функция должна возвращать значение
+  f:\source\repos\hack\hack.ovh\rename_me\license.cpp(117): note:  см. объявление "GetHardwareID"
+f:\source\repos\hack\hack.ovh\rename_me\license.cpp(240): error C2561: GetHardwareID: функция должна возвращать значение
+  f:\source\repos\hack\hack.ovh\rename_me\license.cpp(117): note:  см. объявление "GetHardwareID"
+f:\source\repos\hack\hack.ovh\rename_me\license.cpp(265): error C2561: GetHardwareID: функция должна возвращать значение
+  f:\source\repos\hack\hack.ovh\rename_me\license.cpp(117): note:  см. объявление "GetHardwareID"
+  main.cpp
+  WindowForm.cpp
+f:\source\repos\hack\hack.ovh\rename_me\src\blackbone\include\handleguard.h(10): error C3533: параметр не может иметь тип, содержащий "auto"
+  f:\source\repos\hack\hack.ovh\rename_me\src\blackbone\include\handleguard.h(10): note: "auto" в нетиповых параметрах шаблона требует по меньшей мере "/std:c++17"
+f:\source\repos\hack\hack.ovh\rename_me\src\blackbone\include\handleguard.h(83): error C2975: close_fn: недопустимый аргумент шаблона для "blackbone::HandleGuard", требуется константное выражение времени компиляции
+  f:\source\repos\hack\hack.ovh\rename_me\src\blackbone\include\handleguard.h(10): note:  см. объявление "close_fn"
+f:\source\repos\hack\hack.ovh\rename_me\src\blackbone\include\handleguard.h(84): error C2975: close_fn: недопустимый аргумент шаблона для "blackbone::HandleGuard", требуется константное выражение времени компиляции
+  f:\source\repos\hack\hack.ovh\rename_me\src\blackbone\include\handleguard.h(10): note:  см. объявление "close_fn"
+f:\source\repos\hack\hack.ovh\rename_me\src\blackbone\include\handleguard.h(85): error C2975: close_fn: недопустимый аргумент шаблона для "blackbone::HandleGuard", требуется константное выражение времени компиляции
+  f:\source\repos\hack\hack.ovh\rename_me\src\blackbone\include\handleguard.h(10): note:  см. объявление "close_fn"
+f:\source\repos\hack\hack.ovh\rename_me\src\blackbone\include\handleguard.h(86): error C2975: close_fn: недопустимый аргумент шаблона для "blackbone::HandleGuard", требуется константное выражение времени компиляции
+  f:\source\repos\hack\hack.ovh\rename_me\src\blackbone\include\handleguard.h(10): note:  см. объявление "close_fn"
+f:\source\repos\hack\hack.ovh\rename_me\src\blackbone\include\handleguard.h(88): error C2975: close_fn: недопустимый аргумент шаблона для "blackbone::HandleGuard", требуется константное выражение времени компиляции
+  f:\source\repos\hack\hack.ovh\rename_me\src\blackbone\include\handleguard.h(10): note:  см. объявление "close_fn"
+  class template optional is only available with C++17 or later.
+f:\source\repos\hack\hack.ovh\rename_me\src\blackbone\include\callresult.h(16): error C2039: optional: не является членом "std"
+  f:\program files (x86)\microsoft visual studio\2017\community\vc\tools\msvc\14.15.26726\include\map(20): note:  см. объявление "std"
+  f:\source\repos\hack\hack.ovh\rename_me\src\blackbone\include\callresult.h(43): note: выполняется компиляция ссылки на экземпляр шаблон класс "blackbone::call_result_t<T>"
+f:\source\repos\hack\hack.ovh\rename_me\src\blackbone\include\callresult.h(16): error C2143: синтаксическая ошибка: отсутствие ";" перед "<"
+f:\source\repos\hack\hack.ovh\rename_me\src\blackbone\include\callresult.h(16): error C4430: отсутствует спецификатор типа - предполагается int. Примечание. C++ не поддерживает int по умолчанию
+f:\source\repos\hack\hack.ovh\rename_me\src\blackbone\include\callresult.h(16): error C2039: nullopt: не является членом "std"
+  f:\program files (x86)\microsoft visual studio\2017\community\vc\tools\msvc\14.15.26726\include\map(20): note:  см. объявление "std"
+f:\source\repos\hack\hack.ovh\rename_me\src\blackbone\include\callresult.h(16): error C2238: непредвиденные лексемы перед ";"
+f:\source\repos\hack\hack.ovh\rename_me\src\blackbone\include\callresult.h(22): error C3861: result_data: идентификатор не найден
+f:\source\repos\hack\hack.ovh\rename_me\src\blackbone\include\callresult.h(24): error C3861: result_data: идентификатор не найден
+f:\source\repos\hack\hack.ovh\rename_me\src\blackbone\include\callresult.h(34): error C3861: result_data: идентификатор не найден
+f:\source\repos\hack\hack.ovh\rename_me\src\blackbone\include\callresult.h(35): error C3861: result_data: идентификатор не найден
+f:\source\repos\hack\hack.ovh\rename_me\src\blackbone\include\callresult.h(36): error C3861: result_data: идентификатор не найден
+f:\source\repos\hack\hack.ovh\rename_me\src\blackbone\include\callresult.h(39): error C3861: result_data: идентификатор не найден
+f:\source\repos\hack\hack.ovh\rename_me\src\blackbone\include\callresult.h(41): error C3861: result_data: идентификатор не найден
+f:\source\repos\hack\hack.ovh\rename_me\src\blackbone\include\callresult.h(42): error C3861: result_data: идентификатор не найден

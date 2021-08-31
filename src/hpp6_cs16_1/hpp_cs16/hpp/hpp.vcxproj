@@ -1,0 +1,407 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <VCProjectVersion>15.0</VCProjectVersion>
+    <ProjectGuid>{41F87539-223D-4015-9B41-BE2516B6A5E0}</ProjectGuid>
+    <Keyword>Win32Proj</Keyword>
+    <RootNamespace>hpp</RootNamespace>
+    <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v142</PlatformToolset>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v142</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v142</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v142</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="Shared">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <LinkIncremental>true</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <LinkIncremental>true</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <LinkIncremental>false</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <LinkIncremental>false</LinkIncremental>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>WIN32;_DEBUG;HPP_EXPORTS;_WINDOWS;_USRDLL;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>_DEBUG;HPP_EXPORTS;_WINDOWS;_USRDLL;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>WIN32;NDEBUG;HPP_EXPORTS;_WINDOWS;_USRDLL;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+      <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <MinimalRebuild>false</MinimalRebuild>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>NDEBUG;HPP_EXPORTS;_WINDOWS;_USRDLL;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="aimbot.cpp" />
+    <ClCompile Include="client.cpp" />
+    <ClCompile Include="cmd_handling.cpp" />
+    <ClCompile Include="cvars.cpp" />
+    <ClCompile Include="dllmain.cpp" />
+    <ClCompile Include="drawgui.cpp" />
+    <ClCompile Include="drawlist.cpp" />
+    <ClCompile Include="easywsclient.cpp" />
+    <ClCompile Include="ImGui\imgui.cpp" />
+    <ClCompile Include="ImGui\imgui_draw.cpp" />
+    <ClCompile Include="ImGui\imgui_impl_sdl.cpp" />
+    <ClCompile Include="knifebot.cpp" />
+    <ClCompile Include="kreedz.cpp" />
+    <ClCompile Include="menu.cpp" />
+    <ClCompile Include="menu_elements.cpp" />
+    <ClCompile Include="menu_themes.cpp" />
+    <ClCompile Include="miscellaneous.cpp" />
+    <ClCompile Include="nospread.cpp" />
+    <ClCompile Include="offsets.cpp" />
+    <ClCompile Include="opengl.cpp" />
+    <ClCompile Include="qangle.cpp" />
+    <ClCompile Include="security.cpp" />
+    <ClCompile Include="settings.cpp" />
+    <ClCompile Include="SimpleIni\ConvertUTF.c" />
+    <ClCompile Include="enginemsg.cpp" />
+    <ClCompile Include="spoofer.cpp" />
+    <ClCompile Include="usermsg.cpp" />
+    <ClCompile Include="utils.cpp" />
+    <ClCompile Include="ValveSDK.cpp" />
+    <ClCompile Include="ValveSDK\common\parsemsg.cpp" />
+    <ClCompile Include="vector.cpp" />
+    <ClCompile Include="visuals.cpp" />
+    <ClCompile Include="weapons.cpp" />
+    <ClCompile Include="world.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="aimbot.h" />
+    <ClInclude Include="client.h" />
+    <ClInclude Include="cmd_handling.h" />
+    <ClInclude Include="cvars.h" />
+    <ClInclude Include="drawgui.h" />
+    <ClInclude Include="drawlist.h" />
+    <ClInclude Include="easywsclient.hpp" />
+    <ClInclude Include="funchook.h" />
+    <ClInclude Include="globals.h" />
+    <ClInclude Include="ImGui\imgui.h" />
+    <ClInclude Include="ImGui\imgui_impl_sdl.h" />
+    <ClInclude Include="ImGui\imgui_internal.h" />
+    <ClInclude Include="ImGui\stb_rect_pack.h" />
+    <ClInclude Include="ImGui\stb_textedit.h" />
+    <ClInclude Include="ImGui\stb_truetype.h" />
+    <ClInclude Include="knifebot.h" />
+    <ClInclude Include="kreedz.h" />
+    <ClInclude Include="main.h" />
+    <ClInclude Include="menu.h" />
+    <ClInclude Include="menu_elements.h" />
+    <ClInclude Include="menu_themes.h" />
+    <ClInclude Include="minhook.h" />
+    <ClInclude Include="miscellaneous.h" />
+    <ClInclude Include="nospread.h" />
+    <ClInclude Include="offsets.h" />
+    <ClInclude Include="opengl.h" />
+    <ClInclude Include="patternlist.h" />
+    <ClInclude Include="qangle.h" />
+    <ClInclude Include="security.h" />
+    <ClInclude Include="settings.h" />
+    <ClInclude Include="SimpleIni\ConvertUTF.h" />
+    <ClInclude Include="SimpleIni\SimpleIni.h" />
+    <ClInclude Include="enginemsg.h" />
+    <ClInclude Include="spoofer.h" />
+    <ClInclude Include="usermsg.h" />
+    <ClInclude Include="utils.h" />
+    <ClInclude Include="ValveSDK.h" />
+    <ClInclude Include="ValveSDK\common\beamdef.h" />
+    <ClInclude Include="ValveSDK\common\cl_entity.h" />
+    <ClInclude Include="ValveSDK\common\com_model.h" />
+    <ClInclude Include="ValveSDK\common\const.h" />
+    <ClInclude Include="ValveSDK\common\crc.h" />
+    <ClInclude Include="ValveSDK\common\cvardef.h" />
+    <ClInclude Include="ValveSDK\common\dlight.h" />
+    <ClInclude Include="ValveSDK\common\entity_state.h" />
+    <ClInclude Include="ValveSDK\common\entity_types.h" />
+    <ClInclude Include="ValveSDK\common\enums.h" />
+    <ClInclude Include="ValveSDK\common\event_api.h" />
+    <ClInclude Include="ValveSDK\common\event_args.h" />
+    <ClInclude Include="ValveSDK\common\event_flags.h" />
+    <ClInclude Include="ValveSDK\common\hltv.h" />
+    <ClInclude Include="ValveSDK\common\IDemoPlayer.h" />
+    <ClInclude Include="ValveSDK\common\in_buttons.h" />
+    <ClInclude Include="ValveSDK\common\netadr.h" />
+    <ClInclude Include="ValveSDK\common\net_api.h" />
+    <ClInclude Include="ValveSDK\common\parsemsg.h" />
+    <ClInclude Include="ValveSDK\common\particledef.h" />
+    <ClInclude Include="ValveSDK\common\pmtrace.h" />
+    <ClInclude Include="ValveSDK\common\qlimits.h" />
+    <ClInclude Include="ValveSDK\common\quakedef.h" />
+    <ClInclude Include="ValveSDK\common\ref_params.h" />
+    <ClInclude Include="ValveSDK\common\r_efx.h" />
+    <ClInclude Include="ValveSDK\common\r_studioint.h" />
+    <ClInclude Include="ValveSDK\common\screenfade.h" />
+    <ClInclude Include="ValveSDK\common\Sequence.h" />
+    <ClInclude Include="ValveSDK\common\triangleapi.h" />
+    <ClInclude Include="ValveSDK\common\usercmd.h" />
+    <ClInclude Include="ValveSDK\common\vmodes.h" />
+    <ClInclude Include="ValveSDK\common\weaponinfo.h" />
+    <ClInclude Include="ValveSDK\dlls\activity.h" />
+    <ClInclude Include="ValveSDK\dlls\cdll_dll.h" />
+    <ClInclude Include="ValveSDK\dlls\player.h" />
+    <ClInclude Include="ValveSDK\dlls\weapons.h" />
+    <ClInclude Include="ValveSDK\dlls\weapontype.h" />
+    <ClInclude Include="ValveSDK\engine\archtypes.h" />
+    <ClInclude Include="ValveSDK\engine\bspfile.h" />
+    <ClInclude Include="ValveSDK\engine\cdll_int.h" />
+    <ClInclude Include="ValveSDK\engine\client.h" />
+    <ClInclude Include="ValveSDK\engine\common.h" />
+    <ClInclude Include="ValveSDK\engine\consistency.h" />
+    <ClInclude Include="ValveSDK\engine\custom.h" />
+    <ClInclude Include="ValveSDK\engine\delta_packet.h" />
+    <ClInclude Include="ValveSDK\engine\event.h" />
+    <ClInclude Include="ValveSDK\engine\model.h" />
+    <ClInclude Include="ValveSDK\engine\modelgen.h" />
+    <ClInclude Include="ValveSDK\engine\net.h" />
+    <ClInclude Include="ValveSDK\engine\progdefs.h" />
+    <ClInclude Include="ValveSDK\engine\progs.h" />
+    <ClInclude Include="ValveSDK\engine\sound.h" />
+    <ClInclude Include="ValveSDK\engine\spritegn.h" />
+    <ClInclude Include="ValveSDK\engine\studio.h" />
+    <ClInclude Include="ValveSDK\GameUI\IGameConsole.h" />
+    <ClInclude Include="ValveSDK\GameUI\IGameUI.h" />
+    <ClInclude Include="ValveSDK\GameUI\IRunGameEngine.h" />
+    <ClInclude Include="ValveSDK\GameUI\IVGuiModuleLoader.h" />
+    <ClInclude Include="ValveSDK\pm_shared\pm_defs.h" />
+    <ClInclude Include="ValveSDK\pm_shared\pm_info.h" />
+    <ClInclude Include="ValveSDK\pm_shared\pm_materials.h" />
+    <ClInclude Include="ValveSDK\pm_shared\pm_movevars.h" />
+    <ClInclude Include="ValveSDK\pm_shared\pm_shared.h" />
+    <ClInclude Include="ValveSDK\public\keydefs.h" />
+    <ClInclude Include="ValveSDK\public\steam\isteamapps.h" />
+    <ClInclude Include="ValveSDK\public\steam\isteambilling.h" />
+    <ClInclude Include="ValveSDK\public\steam\isteamclient.h" />
+    <ClInclude Include="ValveSDK\public\steam\isteamcontroller.h" />
+    <ClInclude Include="ValveSDK\public\steam\isteamfriends.h" />
+    <ClInclude Include="ValveSDK\public\steam\isteamgameserver.h" />
+    <ClInclude Include="ValveSDK\public\steam\isteamgameserverstats.h" />
+    <ClInclude Include="ValveSDK\public\steam\isteamhttp.h" />
+    <ClInclude Include="ValveSDK\public\steam\isteammatchmaking.h" />
+    <ClInclude Include="ValveSDK\public\steam\isteamnetworking.h" />
+    <ClInclude Include="ValveSDK\public\steam\isteamremotestorage.h" />
+    <ClInclude Include="ValveSDK\public\steam\isteamscreenshots.h" />
+    <ClInclude Include="ValveSDK\public\steam\isteamunifiedmessages.h" />
+    <ClInclude Include="ValveSDK\public\steam\isteamuser.h" />
+    <ClInclude Include="ValveSDK\public\steam\isteamuserstats.h" />
+    <ClInclude Include="ValveSDK\public\steam\isteamutils.h" />
+    <ClInclude Include="ValveSDK\public\steam\matchmakingtypes.h" />
+    <ClInclude Include="ValveSDK\public\steam\steamclientpublic.h" />
+    <ClInclude Include="ValveSDK\public\steam\steamhttpenums.h" />
+    <ClInclude Include="ValveSDK\public\steam\steamtypes.h" />
+    <ClInclude Include="ValveSDK\public\steam\steam_api.h" />
+    <ClInclude Include="ValveSDK\public\steam\steam_gameserver.h" />
+    <ClInclude Include="ValveSDK\VGUI2\IEngineVGui.h" />
+    <ClInclude Include="ValveSDK\VGUI2\IHTML.h" />
+    <ClInclude Include="ValveSDK\VGUI2\IPanel.h" />
+    <ClInclude Include="ValveSDK\VGUI2\ISurface.h" />
+    <ClInclude Include="ValveSDK\VGUI\VGUI.h" />
+    <ClInclude Include="ValveSDK\VGUI\VGUI_ActionSignal.h" />
+    <ClInclude Include="ValveSDK\VGUI\VGUI_App.h" />
+    <ClInclude Include="ValveSDK\VGUI\VGUI_Bitmap.h" />
+    <ClInclude Include="ValveSDK\VGUI\VGUI_BitmapTGA.h" />
+    <ClInclude Include="ValveSDK\VGUI\VGUI_Border.h" />
+    <ClInclude Include="ValveSDK\VGUI\VGUI_BorderLayout.h" />
+    <ClInclude Include="ValveSDK\VGUI\VGUI_BorderPair.h" />
+    <ClInclude Include="ValveSDK\VGUI\VGUI_BuildGroup.h" />
+    <ClInclude Include="ValveSDK\VGUI\VGUI_Button.h" />
+    <ClInclude Include="ValveSDK\VGUI\VGUI_ButtonController.h" />
+    <ClInclude Include="ValveSDK\VGUI\VGUI_ButtonGroup.h" />
+    <ClInclude Include="ValveSDK\VGUI\VGUI_ChangeSignal.h" />
+    <ClInclude Include="ValveSDK\VGUI\VGUI_CheckButton.h" />
+    <ClInclude Include="ValveSDK\VGUI\VGUI_Color.h" />
+    <ClInclude Include="ValveSDK\VGUI\VGUI_ComboKey.h" />
+    <ClInclude Include="ValveSDK\VGUI\VGUI_ConfigWizard.h" />
+    <ClInclude Include="ValveSDK\VGUI\VGUI_Cursor.h" />
+    <ClInclude Include="ValveSDK\VGUI\VGUI_Dar.h" />
+    <ClInclude Include="ValveSDK\VGUI\VGUI_DataInputStream.h" />
+    <ClInclude Include="ValveSDK\VGUI\VGUI_Desktop.h" />
+    <ClInclude Include="ValveSDK\VGUI\VGUI_DesktopIcon.h" />
+    <ClInclude Include="ValveSDK\VGUI\VGUI_EditPanel.h" />
+    <ClInclude Include="ValveSDK\VGUI\VGUI_EtchedBorder.h" />
+    <ClInclude Include="ValveSDK\VGUI\VGUI_FileInputStream.h" />
+    <ClInclude Include="ValveSDK\VGUI\VGUI_FlowLayout.h" />
+    <ClInclude Include="ValveSDK\VGUI\VGUI_FocusChangeSignal.h" />
+    <ClInclude Include="ValveSDK\VGUI\VGUI_FocusNavGroup.h" />
+    <ClInclude Include="ValveSDK\VGUI\VGUI_Font.h" />
+    <ClInclude Include="ValveSDK\VGUI\VGUI_Frame.h" />
+    <ClInclude Include="ValveSDK\VGUI\VGUI_FrameSignal.h" />
+    <ClInclude Include="ValveSDK\VGUI\VGUI_GridLayout.h" />
+    <ClInclude Include="ValveSDK\VGUI\VGUI_HeaderPanel.h" />
+    <ClInclude Include="ValveSDK\VGUI\VGUI_Image.h" />
+    <ClInclude Include="ValveSDK\VGUI\VGUI_ImagePanel.h" />
+    <ClInclude Include="ValveSDK\VGUI\VGUI_InputSignal.h" />
+    <ClInclude Include="ValveSDK\VGUI\VGUI_InputStream.h" />
+    <ClInclude Include="ValveSDK\VGUI\VGUI_IntChangeSignal.h" />
+    <ClInclude Include="ValveSDK\VGUI\VGUI_IntLabel.h" />
+    <ClInclude Include="ValveSDK\VGUI\VGUI_KeyCode.h" />
+    <ClInclude Include="ValveSDK\VGUI\VGUI_Label.h" />
+    <ClInclude Include="ValveSDK\VGUI\VGUI_Layout.h" />
+    <ClInclude Include="ValveSDK\VGUI\VGUI_LayoutInfo.h" />
+    <ClInclude Include="ValveSDK\VGUI\VGUI_LineBorder.h" />
+    <ClInclude Include="ValveSDK\VGUI\VGUI_ListPanel.h" />
+    <ClInclude Include="ValveSDK\VGUI\VGUI_LoweredBorder.h" />
+    <ClInclude Include="ValveSDK\VGUI\VGUI_Menu.h" />
+    <ClInclude Include="ValveSDK\VGUI\VGUI_MenuItem.h" />
+    <ClInclude Include="ValveSDK\VGUI\VGUI_MenuSeparator.h" />
+    <ClInclude Include="ValveSDK\VGUI\VGUI_MessageBox.h" />
+    <ClInclude Include="ValveSDK\VGUI\VGUI_MiniApp.h" />
+    <ClInclude Include="ValveSDK\VGUI\VGUI_MouseCode.h" />
+    <ClInclude Include="ValveSDK\VGUI\VGUI_Panel.h" />
+    <ClInclude Include="ValveSDK\VGUI\VGUI_Point.h" />
+    <ClInclude Include="ValveSDK\VGUI\VGUI_PopupMenu.h" />
+    <ClInclude Include="ValveSDK\VGUI\VGUI_ProgressBar.h" />
+    <ClInclude Include="ValveSDK\VGUI\VGUI_RadioButton.h" />
+    <ClInclude Include="ValveSDK\VGUI\VGUI_RaisedBorder.h" />
+    <ClInclude Include="ValveSDK\VGUI\VGUI_RepaintSignal.h" />
+    <ClInclude Include="ValveSDK\VGUI\VGUI_Scheme.h" />
+    <ClInclude Include="ValveSDK\VGUI\VGUI_ScrollBar.h" />
+    <ClInclude Include="ValveSDK\VGUI\VGUI_ScrollPanel.h" />
+    <ClInclude Include="ValveSDK\VGUI\VGUI_Slider.h" />
+    <ClInclude Include="ValveSDK\VGUI\VGUI_StackLayout.h" />
+    <ClInclude Include="ValveSDK\VGUI\VGUI_String.h" />
+    <ClInclude Include="ValveSDK\VGUI\VGUI_Surface.h" />
+    <ClInclude Include="ValveSDK\VGUI\VGUI_SurfaceBase.h" />
+    <ClInclude Include="ValveSDK\VGUI\VGUI_SurfaceGL.h" />
+    <ClInclude Include="ValveSDK\VGUI\VGUI_TablePanel.h" />
+    <ClInclude Include="ValveSDK\VGUI\VGUI_TabPanel.h" />
+    <ClInclude Include="ValveSDK\VGUI\VGUI_TaskBar.h" />
+    <ClInclude Include="ValveSDK\VGUI\VGUI_TextEntry.h" />
+    <ClInclude Include="ValveSDK\VGUI\VGUI_TextGrid.h" />
+    <ClInclude Include="ValveSDK\VGUI\VGUI_TextImage.h" />
+    <ClInclude Include="ValveSDK\VGUI\VGUI_TextPanel.h" />
+    <ClInclude Include="ValveSDK\VGUI\VGUI_TickSignal.h" />
+    <ClInclude Include="ValveSDK\VGUI\VGUI_ToggleButton.h" />
+    <ClInclude Include="ValveSDK\VGUI\VGUI_TreeFolder.h" />
+    <ClInclude Include="ValveSDK\VGUI\VGUI_WizardPanel.h" />
+    <ClInclude Include="vector.h" />
+    <ClInclude Include="visuals.h" />
+    <ClInclude Include="VMProtectSDK.h" />
+    <ClInclude Include="weapons.h" />
+    <ClInclude Include="world.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="cpp.hint" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

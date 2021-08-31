@@ -1,0 +1,45 @@
+class Game
+{
+public:
+	static void				ClampSpeed(const float& maxspeed, usercmd_s* cmd);
+	static Vector			PredictPlayer(const int& nPlayerID);
+	static void				FixPlayersPhysents();
+	static void				EstimateGait();
+	static bool				TraceShield(const Vector& vecSrc, const Vector& vecAdjustedOrigin, const QAngle& QInAngles, const int& iPlayer, const float& flCustomDistance = -1.f);
+	static bool				FindSpanningContexts(cl_entity_t* ent, float targettime, position_history_t** newer, position_history_t** older);
+	static bool				BacktrackPlayer(cl_entity_s* pGameEntity, int lerp_msec, Vector& origin);
+	static bool				GetBacktrackOrigin(cl_entity_s* pGameEntity, Vector& origin);
+	static void				SetFakeLatency(const double &latency);
+	static void				MakeAngle(float* angles, usercmd_s* cmd);
+	static void				TextureHit(Vector vecSrc, Vector vecEnd, Vector vecDir, int nSkipPhysent, pmtrace_t& pmTrace);
+	static int				SimulateFireBullet(const Vector& a_vecSrc, const Vector& a_vecEnd, const float& a_flDistance, const int& a_iPenetration, const int& a_iBulletType, const int& a_iDamage, const float& a_flRangeModifier);
+	static void				SendCommand(const bool &status);
+	static pcmd_t			CommandByName(const char* name);
+	static int				GetTeamNum(std::string teamname);
+	static pmtrace_t		GetGroundTrace(int usehull);
+	static void				GetWeaponModelName(int weaponmodel, char* out);
+	static void				GetBoundBox(Vector& mins, Vector& maxs, int usehull);
+	static int				LookupSequence(model_s* model, const char** label, int size);
+	static bool				PM_Ladder();
+	static void				GetHitboxes(cl_entity_s* pGameEntity);
+	static bool				WorldToScreen(Vector origin, Vector2D& screen);
+	static std::string		GetWeaponName(int index);
+	static int				GetWeaponIndex(std::string name);
+	static std::string		KeynumToString(int keynum);
+	static int				GetRespawnHealth();
+	static bool				ObservedPlayer(int index);
+	static bool				IsTakenScreenshot();
+	static bool				IsConnected();
+	static void				GetColorHealthBased(int health, float* out);
+	static void				CountGameTime();
+	static void				CountRoundTime();
+	static void				SetRenderFOV(int iFOV);
+	static bool				IsValidEntity(cl_entity_s* pGameEntity);
+	static int				PM_GetPhysEntInfo(int ent);
+	static void				V_GetChaseOrigin(const Vector& origin, float distance, Vector& returnvec);
+	static int				GetHitgroup(int hitboxnum);
+	static float			TraceAttack(const float& a_flDamage, const int& a_nHitGroup);
+	static int				TakeSimulatedDamage(const Vector& a_vecSrc, const Vector& a_vecEnd, const int& a_nHitGroup, const int& a_iPlayer);
+	static int				TakeDamage(const Vector& a_vecSrc, const Vector& a_vecEnd, const int& a_nHitGroup, const int& a_iPlayer);
+	static float			ApplyArmor(const float& a_flDamage, const int& a_nHitGroup, const int& a_iPlayer);
+};

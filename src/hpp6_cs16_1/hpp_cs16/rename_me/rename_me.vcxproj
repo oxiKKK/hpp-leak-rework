@@ -1,0 +1,407 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <VCProjectVersion>15.0</VCProjectVersion>
+    <ProjectGuid>{8E81C84F-7B39-4536-BD59-66B67A77DA1C}</ProjectGuid>
+    <RootNamespace>renameme</RootNamespace>
+    <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v142</PlatformToolset>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v142</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v142</PlatformToolset>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v142</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="Shared">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <ConformanceMode>true</ConformanceMode>
+      <AdditionalIncludeDirectories>$(ProjectDir)includes\blackbone\3rd_party\AsmJit;$(ProjectDir)includes;$(ProjectDir)includes\blackbone\3rd_party;C:\Program Files (x86)\Microsoft DirectX SDK (June 2010)\Include\;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <FavorSizeOrSpeed>Speed</FavorSizeOrSpeed>
+      <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
+      <StringPooling>true</StringPooling>
+      <LanguageStandard>stdcpp17</LanguageStandard>
+      <InlineFunctionExpansion>AnySuitable</InlineFunctionExpansion>
+      <EnableFiberSafeOptimizations>true</EnableFiberSafeOptimizations>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+    </ClCompile>
+    <Link>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <AdditionalDependencies>d3d9.lib;C:\Program Files (x86)\Microsoft DirectX SDK (June 2010)\Lib\x86\d3dx9.lib;wininet.lib;BlackBone.lib;comsuppw.lib;wbemuuid.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <GenerateMapFile>true</GenerateMapFile>
+      <UACExecutionLevel>RequireAdministrator</UACExecutionLevel>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <SDLCheck>true</SDLCheck>
+      <ConformanceMode>true</ConformanceMode>
+      <AdditionalIncludeDirectories>$(ProjectDir)includes;$(ProjectDir)includes/blackbone</AdditionalIncludeDirectories>
+      <LanguageStandard>stdcpplatest</LanguageStandard>
+    </ClCompile>
+    <Link>
+      <AdditionalDependencies>d3d9.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <SDLCheck>true</SDLCheck>
+      <ConformanceMode>true</ConformanceMode>
+    </ClCompile>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <ConformanceMode>true</ConformanceMode>
+      <AdditionalIncludeDirectories>C:\Program Files (x86)\Microsoft DirectX SDK (June 2010)\Include\;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ClCompile>
+    <Link>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <AdditionalDependencies>d3d9.lib;C:\Program Files (x86)\Microsoft DirectX SDK (June 2010)\Lib\x86\d3dx9.lib;wininet.lib;BlackBone.lib;comsuppw.lib;wbemuuid.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="build.cpp" />
+    <ClCompile Include="includes\blackbone\3rd_party\AsmJit\base\assembler.cpp" />
+    <ClCompile Include="includes\blackbone\3rd_party\AsmJit\base\codegen.cpp" />
+    <ClCompile Include="includes\blackbone\3rd_party\AsmJit\base\compiler.cpp" />
+    <ClCompile Include="includes\blackbone\3rd_party\AsmJit\base\constpool.cpp" />
+    <ClCompile Include="includes\blackbone\3rd_party\AsmJit\base\containers.cpp" />
+    <ClCompile Include="includes\blackbone\3rd_party\AsmJit\base\context.cpp" />
+    <ClCompile Include="includes\blackbone\3rd_party\AsmJit\base\cpuinfo.cpp" />
+    <ClCompile Include="includes\blackbone\3rd_party\AsmJit\base\cputicks.cpp" />
+    <ClCompile Include="includes\blackbone\3rd_party\AsmJit\base\error.cpp" />
+    <ClCompile Include="includes\blackbone\3rd_party\AsmJit\base\globals.cpp" />
+    <ClCompile Include="includes\blackbone\3rd_party\AsmJit\base\intutil.cpp" />
+    <ClCompile Include="includes\blackbone\3rd_party\AsmJit\base\logger.cpp" />
+    <ClCompile Include="includes\blackbone\3rd_party\AsmJit\base\operand.cpp" />
+    <ClCompile Include="includes\blackbone\3rd_party\AsmJit\base\runtime.cpp" />
+    <ClCompile Include="includes\blackbone\3rd_party\AsmJit\base\string.cpp" />
+    <ClCompile Include="includes\blackbone\3rd_party\AsmJit\base\vmem.cpp" />
+    <ClCompile Include="includes\blackbone\3rd_party\AsmJit\base\zone.cpp" />
+    <ClCompile Include="includes\blackbone\3rd_party\AsmJit\x86\x86assembler.cpp" />
+    <ClCompile Include="includes\blackbone\3rd_party\AsmJit\x86\x86compiler.cpp" />
+    <ClCompile Include="includes\blackbone\3rd_party\AsmJit\x86\x86context.cpp" />
+    <ClCompile Include="includes\blackbone\3rd_party\AsmJit\x86\x86cpuinfo.cpp" />
+    <ClCompile Include="includes\blackbone\3rd_party\AsmJit\x86\x86inst.cpp" />
+    <ClCompile Include="includes\blackbone\3rd_party\AsmJit\x86\x86operand.cpp" />
+    <ClCompile Include="includes\blackbone\3rd_party\AsmJit\x86\x86operand_regs.cpp" />
+    <ClCompile Include="includes\blackbone\3rd_party\AsmJit\x86\x86scheduler.cpp" />
+    <ClCompile Include="includes\blackbone\3rd_party\rewolf-wow64ext\sample\main.cpp" />
+    <ClCompile Include="includes\blackbone\3rd_party\rewolf-wow64ext\src\wow64ext.cpp" />
+    <ClCompile Include="includes\blackbone\BlackBoneDrv\BlackBoneDrv.c" />
+    <ClCompile Include="includes\blackbone\BlackBoneDrv\Dispatch.c" />
+    <ClCompile Include="includes\blackbone\BlackBoneDrv\Inject.c" />
+    <ClCompile Include="includes\blackbone\BlackBoneDrv\ldrreloc.c" />
+    <ClCompile Include="includes\blackbone\BlackBoneDrv\Loader.c" />
+    <ClCompile Include="includes\blackbone\BlackBoneDrv\MMap.c" />
+    <ClCompile Include="includes\blackbone\BlackBoneDrv\NotifyRoutine.c" />
+    <ClCompile Include="includes\blackbone\BlackBoneDrv\Private.c" />
+    <ClCompile Include="includes\blackbone\BlackBoneDrv\Remap.c" />
+    <ClCompile Include="includes\blackbone\BlackBoneDrv\Routines.c" />
+    <ClCompile Include="includes\blackbone\BlackBoneDrv\Utils.c" />
+    <ClCompile Include="includes\blackbone\BlackBoneDrv\VadHelpers.c" />
+    <ClCompile Include="includes\blackbone\BlackBoneDrv\VadRoutines.c" />
+    <ClCompile Include="includes\blackbone\BlackBoneTest\TestAsmJit.cpp" />
+    <ClCompile Include="includes\blackbone\BlackBoneTest\TestAsmVariant.cpp" />
+    <ClCompile Include="includes\blackbone\BlackBoneTest\TestBasic.cpp" />
+    <ClCompile Include="includes\blackbone\BlackBoneTest\TestDriver.cpp" />
+    <ClCompile Include="includes\blackbone\BlackBoneTest\TestGuard.cpp" />
+    <ClCompile Include="includes\blackbone\BlackBoneTest\TestLocalHook.cpp" />
+    <ClCompile Include="includes\blackbone\BlackBoneTest\TestManualMap.cpp" />
+    <ClCompile Include="includes\blackbone\BlackBoneTest\TestModules.cpp" />
+    <ClCompile Include="includes\blackbone\BlackBoneTest\TestMultiPtr.cpp" />
+    <ClCompile Include="includes\blackbone\BlackBoneTest\TestPatternScan.cpp" />
+    <ClCompile Include="includes\blackbone\BlackBoneTest\TestRemoteCall.cpp" />
+    <ClCompile Include="includes\blackbone\BlackBoneTest\TestRemoteHook.cpp" />
+    <ClCompile Include="includes\blackbone\BlackBoneTest\TestRemoteMemory.cpp" />
+    <ClCompile Include="includes\blackbone\BlackBoneTest\TestSymbols.cpp" />
+    <ClCompile Include="includes\blackbone\BlackBoneTest\TestSyscall.cpp" />
+    <ClCompile Include="includes\blackbone\BlackBone\Asm\AsmHelper32.cpp" />
+    <ClCompile Include="includes\blackbone\BlackBone\Asm\AsmHelper64.cpp" />
+    <ClCompile Include="includes\blackbone\BlackBone\Asm\LDasm.c" />
+    <ClCompile Include="includes\blackbone\BlackBone\DllMain.cpp" />
+    <ClCompile Include="includes\blackbone\BlackBone\DriverControl\DriverControl.cpp" />
+    <ClCompile Include="includes\blackbone\BlackBone\LocalHook\LocalHookBase.cpp" />
+    <ClCompile Include="includes\blackbone\BlackBone\LocalHook\TraceHook.cpp" />
+    <ClCompile Include="includes\blackbone\BlackBone\ManualMap\MExcept.cpp" />
+    <ClCompile Include="includes\blackbone\BlackBone\ManualMap\MMap.cpp" />
+    <ClCompile Include="includes\blackbone\BlackBone\ManualMap\Native\NtLoader.cpp" />
+    <ClCompile Include="includes\blackbone\BlackBone\Misc\InitOnce.cpp" />
+    <ClCompile Include="includes\blackbone\BlackBone\Misc\NameResolve.cpp" />
+    <ClCompile Include="includes\blackbone\BlackBone\Misc\Utils.cpp" />
+    <ClCompile Include="includes\blackbone\BlackBone\Patterns\PatternSearch.cpp" />
+    <ClCompile Include="includes\blackbone\BlackBone\PE\ImageNET.cpp" />
+    <ClCompile Include="includes\blackbone\BlackBone\PE\PEImage.cpp" />
+    <ClCompile Include="includes\blackbone\BlackBone\Process\MemBlock.cpp" />
+    <ClCompile Include="includes\blackbone\BlackBone\Process\Process.cpp" />
+    <ClCompile Include="includes\blackbone\BlackBone\Process\ProcessCore.cpp" />
+    <ClCompile Include="includes\blackbone\BlackBone\Process\ProcessMemory.cpp" />
+    <ClCompile Include="includes\blackbone\BlackBone\Process\ProcessModules.cpp" />
+    <ClCompile Include="includes\blackbone\BlackBone\Process\RPC\RemoteExec.cpp" />
+    <ClCompile Include="includes\blackbone\BlackBone\Process\RPC\RemoteHook.cpp" />
+    <ClCompile Include="includes\blackbone\BlackBone\Process\RPC\RemoteLocalHook.cpp" />
+    <ClCompile Include="includes\blackbone\BlackBone\Process\RPC\RemoteMemory.cpp" />
+    <ClCompile Include="includes\blackbone\BlackBone\Process\Threads\Thread.cpp" />
+    <ClCompile Include="includes\blackbone\BlackBone\Process\Threads\Threads.cpp" />
+    <ClCompile Include="includes\blackbone\BlackBone\Subsystem\NativeSubsystem.cpp" />
+    <ClCompile Include="includes\blackbone\BlackBone\Subsystem\Wow64Subsystem.cpp" />
+    <ClCompile Include="includes\blackbone\BlackBone\Subsystem\x86Subsystem.cpp" />
+    <ClCompile Include="includes\blackbone\BlackBone\Symbols\PatternLoader.cpp" />
+    <ClCompile Include="includes\blackbone\BlackBone\Symbols\PDBHelper.cpp" />
+    <ClCompile Include="includes\blackbone\BlackBone\Symbols\SymbolData.cpp" />
+    <ClCompile Include="includes\blackbone\BlackBone\Symbols\SymbolLoader.cpp" />
+    <ClCompile Include="includes\blackbone\Samples\Main.cpp" />
+    <ClCompile Include="includes\blackbone\Samples\ManualMap.cpp" />
+    <ClCompile Include="includes\easywsclient\easywsclient.cpp" />
+    <ClCompile Include="window.cpp" />
+    <ClCompile Include="ImGui\imgui.cpp" />
+    <ClCompile Include="ImGui\imgui_draw.cpp" />
+    <ClCompile Include="ImGui\imgui_impl_dx9.cpp" />
+    <ClCompile Include="license.cpp" />
+    <ClCompile Include="main.cpp" />
+    <ClCompile Include="WindowForm.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="build.h" />
+    <ClInclude Include="includes\blackbone\3rd_party\AsmJit\ApiBegin.h" />
+    <ClInclude Include="includes\blackbone\3rd_party\AsmJit\ApiEnd.h" />
+    <ClInclude Include="includes\blackbone\3rd_party\AsmJit\AsmJit.h" />
+    <ClInclude Include="includes\blackbone\3rd_party\AsmJit\base.h" />
+    <ClInclude Include="includes\blackbone\3rd_party\AsmJit\base\assembler.h" />
+    <ClInclude Include="includes\blackbone\3rd_party\AsmJit\base\codegen.h" />
+    <ClInclude Include="includes\blackbone\3rd_party\AsmJit\base\compiler.h" />
+    <ClInclude Include="includes\blackbone\3rd_party\AsmJit\base\constpool.h" />
+    <ClInclude Include="includes\blackbone\3rd_party\AsmJit\base\containers.h" />
+    <ClInclude Include="includes\blackbone\3rd_party\AsmJit\base\context_p.h" />
+    <ClInclude Include="includes\blackbone\3rd_party\AsmJit\base\cpuinfo.h" />
+    <ClInclude Include="includes\blackbone\3rd_party\AsmJit\base\cputicks.h" />
+    <ClInclude Include="includes\blackbone\3rd_party\AsmJit\base\error.h" />
+    <ClInclude Include="includes\blackbone\3rd_party\AsmJit\base\globals.h" />
+    <ClInclude Include="includes\blackbone\3rd_party\AsmJit\base\intutil.h" />
+    <ClInclude Include="includes\blackbone\3rd_party\AsmJit\base\lock.h" />
+    <ClInclude Include="includes\blackbone\3rd_party\AsmJit\base\logger.h" />
+    <ClInclude Include="includes\blackbone\3rd_party\AsmJit\base\operand.h" />
+    <ClInclude Include="includes\blackbone\3rd_party\AsmJit\base\runtime.h" />
+    <ClInclude Include="includes\blackbone\3rd_party\AsmJit\base\string.h" />
+    <ClInclude Include="includes\blackbone\3rd_party\AsmJit\base\vectypes.h" />
+    <ClInclude Include="includes\blackbone\3rd_party\AsmJit\base\vmem.h" />
+    <ClInclude Include="includes\blackbone\3rd_party\AsmJit\base\zone.h" />
+    <ClInclude Include="includes\blackbone\3rd_party\AsmJit\Build.h" />
+    <ClInclude Include="includes\blackbone\3rd_party\AsmJit\Config.h" />
+    <ClInclude Include="includes\blackbone\3rd_party\AsmJit\host.h" />
+    <ClInclude Include="includes\blackbone\3rd_party\AsmJit\x86.h" />
+    <ClInclude Include="includes\blackbone\3rd_party\AsmJit\x86\x86assembler.h" />
+    <ClInclude Include="includes\blackbone\3rd_party\AsmJit\x86\x86compiler.h" />
+    <ClInclude Include="includes\blackbone\3rd_party\AsmJit\x86\x86context_p.h" />
+    <ClInclude Include="includes\blackbone\3rd_party\AsmJit\x86\x86cpuinfo.h" />
+    <ClInclude Include="includes\blackbone\3rd_party\AsmJit\x86\x86inst.h" />
+    <ClInclude Include="includes\blackbone\3rd_party\AsmJit\x86\x86operand.h" />
+    <ClInclude Include="includes\blackbone\3rd_party\AsmJit\x86\x86scheduler_p.h" />
+    <ClInclude Include="includes\blackbone\3rd_party\BeaEngine\headers\BeaEngine.h" />
+    <ClInclude Include="includes\blackbone\3rd_party\BeaEngine\headers\Includes\basic_types.h" />
+    <ClInclude Include="includes\blackbone\3rd_party\BeaEngine\headers\Includes\export.h" />
+    <ClInclude Include="includes\blackbone\3rd_party\cor.h" />
+    <ClInclude Include="includes\blackbone\3rd_party\CorError.h" />
+    <ClInclude Include="includes\blackbone\3rd_party\corhdr.h" />
+    <ClInclude Include="includes\blackbone\3rd_party\DIA\cvconst.h" />
+    <ClInclude Include="includes\blackbone\3rd_party\DIA\dia2.h" />
+    <ClInclude Include="includes\blackbone\3rd_party\DIA\diacreate.h" />
+    <ClInclude Include="includes\blackbone\3rd_party\gchost.h" />
+    <ClInclude Include="includes\blackbone\3rd_party\ivalidator.h" />
+    <ClInclude Include="includes\blackbone\3rd_party\ivehandler.h" />
+    <ClInclude Include="includes\blackbone\3rd_party\metahost.h" />
+    <ClInclude Include="includes\blackbone\3rd_party\mscoree.h" />
+    <ClInclude Include="includes\blackbone\3rd_party\rewolf-wow64ext\src\CMemPtr.h" />
+    <ClInclude Include="includes\blackbone\3rd_party\rewolf-wow64ext\src\internal.h" />
+    <ClInclude Include="includes\blackbone\3rd_party\rewolf-wow64ext\src\resource.h" />
+    <ClInclude Include="includes\blackbone\3rd_party\rewolf-wow64ext\src\wow64ext.h" />
+    <ClInclude Include="includes\blackbone\3rd_party\VersionApi.h" />
+    <ClInclude Include="includes\blackbone\3rd_party\winapifamily.h" />
+    <ClInclude Include="includes\blackbone\3rd_party\winpackagefamily.h" />
+    <ClInclude Include="includes\blackbone\BlackBoneDrv\apiset.h" />
+    <ClInclude Include="includes\blackbone\BlackBoneDrv\BlackBoneDef.h" />
+    <ClInclude Include="includes\blackbone\BlackBoneDrv\BlackBoneDrv.h" />
+    <ClInclude Include="includes\blackbone\BlackBoneDrv\Imports.h" />
+    <ClInclude Include="includes\blackbone\BlackBoneDrv\Loader.h" />
+    <ClInclude Include="includes\blackbone\BlackBoneDrv\NativeEnums.h" />
+    <ClInclude Include="includes\blackbone\BlackBoneDrv\NativeStructs.h" />
+    <ClInclude Include="includes\blackbone\BlackBoneDrv\NativeStructs10.h" />
+    <ClInclude Include="includes\blackbone\BlackBoneDrv\NativeStructs7.h" />
+    <ClInclude Include="includes\blackbone\BlackBoneDrv\NativeStructs8.h" />
+    <ClInclude Include="includes\blackbone\BlackBoneDrv\NativeStructs81.h" />
+    <ClInclude Include="includes\blackbone\BlackBoneDrv\PEStructs.h" />
+    <ClInclude Include="includes\blackbone\BlackBoneDrv\Private.h" />
+    <ClInclude Include="includes\blackbone\BlackBoneDrv\Remap.h" />
+    <ClInclude Include="includes\blackbone\BlackBoneDrv\Routines.h" />
+    <ClInclude Include="includes\blackbone\BlackBoneDrv\Utils.h" />
+    <ClInclude Include="includes\blackbone\BlackBoneDrv\VadHelpers.h" />
+    <ClInclude Include="includes\blackbone\BlackBoneDrv\VadRoutines.h" />
+    <ClInclude Include="includes\blackbone\BlackBoneTest\Common.h" />
+    <ClInclude Include="includes\blackbone\BlackBone\Asm\AsmFactory.h" />
+    <ClInclude Include="includes\blackbone\BlackBone\Asm\AsmHelper32.h" />
+    <ClInclude Include="includes\blackbone\BlackBone\Asm\AsmHelper64.h" />
+    <ClInclude Include="includes\blackbone\BlackBone\Asm\AsmStack.hpp" />
+    <ClInclude Include="includes\blackbone\BlackBone\Asm\AsmVariant.hpp" />
+    <ClInclude Include="includes\blackbone\BlackBone\Asm\IAsmHelper.h" />
+    <ClInclude Include="includes\blackbone\BlackBone\Asm\LDasm.h" />
+    <ClInclude Include="includes\blackbone\BlackBone\Config.h" />
+    <ClInclude Include="includes\blackbone\BlackBone\DriverControl\DriverControl.h" />
+    <ClInclude Include="includes\blackbone\BlackBone\Include\ApiSet.h" />
+    <ClInclude Include="includes\blackbone\BlackBone\Include\CallResult.h" />
+    <ClInclude Include="includes\blackbone\BlackBone\Include\FunctionTypes.h" />
+    <ClInclude Include="includes\blackbone\BlackBone\Include\HandleGuard.h" />
+    <ClInclude Include="includes\blackbone\BlackBone\Include\Macro.h" />
+    <ClInclude Include="includes\blackbone\BlackBone\Include\NativeEnums.h" />
+    <ClInclude Include="includes\blackbone\BlackBone\Include\NativeStructures.h" />
+    <ClInclude Include="includes\blackbone\BlackBone\Include\Types.h" />
+    <ClInclude Include="includes\blackbone\BlackBone\Include\Win7Specific.h" />
+    <ClInclude Include="includes\blackbone\BlackBone\Include\Win8Specific.h" />
+    <ClInclude Include="includes\blackbone\BlackBone\Include\Winheaders.h" />
+    <ClInclude Include="includes\blackbone\BlackBone\Include\WinXPSpecific.h" />
+    <ClInclude Include="includes\blackbone\BlackBone\LocalHook\HookHandlerCdecl.h" />
+    <ClInclude Include="includes\blackbone\BlackBone\LocalHook\HookHandlerFastcall.h" />
+    <ClInclude Include="includes\blackbone\BlackBone\LocalHook\HookHandlers.h" />
+    <ClInclude Include="includes\blackbone\BlackBone\LocalHook\HookHandlerStdcall.h" />
+    <ClInclude Include="includes\blackbone\BlackBone\LocalHook\HookHandlerThiscall.h" />
+    <ClInclude Include="includes\blackbone\BlackBone\LocalHook\LocalHook.hpp" />
+    <ClInclude Include="includes\blackbone\BlackBone\LocalHook\LocalHookBase.h" />
+    <ClInclude Include="includes\blackbone\BlackBone\LocalHook\TraceHook.h" />
+    <ClInclude Include="includes\blackbone\BlackBone\LocalHook\VTableHook.hpp" />
+    <ClInclude Include="includes\blackbone\BlackBone\ManualMap\MExcept.h" />
+    <ClInclude Include="includes\blackbone\BlackBone\ManualMap\MMap.h" />
+    <ClInclude Include="includes\blackbone\BlackBone\ManualMap\Native\NtLoader.h" />
+    <ClInclude Include="includes\blackbone\BlackBone\Misc\DynImport.h" />
+    <ClInclude Include="includes\blackbone\BlackBone\Misc\InitOnce.h" />
+    <ClInclude Include="includes\blackbone\BlackBone\Misc\NameResolve.h" />
+    <ClInclude Include="includes\blackbone\BlackBone\Misc\Thunk.hpp" />
+    <ClInclude Include="includes\blackbone\BlackBone\Misc\Trace.hpp" />
+    <ClInclude Include="includes\blackbone\BlackBone\Misc\Utils.h" />
+    <ClInclude Include="includes\blackbone\BlackBone\Patterns\PatternSearch.h" />
+    <ClInclude Include="includes\blackbone\BlackBone\PE\ImageNET.h" />
+    <ClInclude Include="includes\blackbone\BlackBone\PE\PEImage.h" />
+    <ClInclude Include="includes\blackbone\BlackBone\Process\MemBlock.h" />
+    <ClInclude Include="includes\blackbone\BlackBone\Process\MultPtr.hpp" />
+    <ClInclude Include="includes\blackbone\BlackBone\Process\Process.h" />
+    <ClInclude Include="includes\blackbone\BlackBone\Process\ProcessCore.h" />
+    <ClInclude Include="includes\blackbone\BlackBone\Process\ProcessMemory.h" />
+    <ClInclude Include="includes\blackbone\BlackBone\Process\ProcessModules.h" />
+    <ClInclude Include="includes\blackbone\BlackBone\Process\RPC\RemoteContext.hpp" />
+    <ClInclude Include="includes\blackbone\BlackBone\Process\RPC\RemoteExec.h" />
+    <ClInclude Include="includes\blackbone\BlackBone\Process\RPC\RemoteFunction.hpp" />
+    <ClInclude Include="includes\blackbone\BlackBone\Process\RPC\RemoteHook.h" />
+    <ClInclude Include="includes\blackbone\BlackBone\Process\RPC\RemoteLocalHook.h" />
+    <ClInclude Include="includes\blackbone\BlackBone\Process\RPC\RemoteMemory.h" />
+    <ClInclude Include="includes\blackbone\BlackBone\Process\Threads\Thread.h" />
+    <ClInclude Include="includes\blackbone\BlackBone\Process\Threads\Threads.h" />
+    <ClInclude Include="includes\blackbone\BlackBone\Subsystem\NativeSubsystem.h" />
+    <ClInclude Include="includes\blackbone\BlackBone\Subsystem\Wow64Subsystem.h" />
+    <ClInclude Include="includes\blackbone\BlackBone\Subsystem\x86Subsystem.h" />
+    <ClInclude Include="includes\blackbone\BlackBone\Symbols\PatternLoader.h" />
+    <ClInclude Include="includes\blackbone\BlackBone\Symbols\PDBHelper.h" />
+    <ClInclude Include="includes\blackbone\BlackBone\Symbols\SymbolData.h" />
+    <ClInclude Include="includes\blackbone\BlackBone\Symbols\SymbolLoader.h" />
+    <ClInclude Include="includes\blackbone\BlackBone\Syscalls\Syscall.h" />
+    <ClInclude Include="includes\easywsclient\easywsclient.hpp" />
+    <ClInclude Include="VMProtectSDK.h" />
+    <ClInclude Include="window.h" />
+    <ClInclude Include="ImGui\Font_LucidaGrande.h" />
+    <ClInclude Include="ImGui\imconfig.h" />
+    <ClInclude Include="ImGui\imgui.h" />
+    <ClInclude Include="ImGui\imgui_impl_dx9.h" />
+    <ClInclude Include="ImGui\imgui_internal.h" />
+    <ClInclude Include="ImGui\stb_rect_pack.h" />
+    <ClInclude Include="ImGui\stb_textedit.h" />
+    <ClInclude Include="ImGui\stb_truetype.h" />
+    <ClInclude Include="IMG_TitleLogo.h" />
+    <ClInclude Include="IMG_Logotype.h" />
+    <ClInclude Include="license.h" />
+    <ClInclude Include="main.h" />
+    <ClInclude Include="WindowForm.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="includes\blackbone\3rd_party\rewolf-wow64ext\src\wow64ext.rc" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="includes\blackbone\BlackBone\Exports.def" />
+    <None Include="includes\blackbone\BlackBone\Syscalls\Syscall32.asm" />
+    <None Include="includes\blackbone\BlackBone\Syscalls\Syscall64.asm" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

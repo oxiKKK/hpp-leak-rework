@@ -1,0 +1,536 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <VCProjectVersion>16.0</VCProjectVersion>
+    <ProjectGuid>{5473B235-0EC0-40DF-9F2A-5EF220682DFF}</ProjectGuid>
+    <RootNamespace>hpp</RootNamespace>
+    <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v142</PlatformToolset>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v142</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v142</PlatformToolset>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v142</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="Shared">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup />
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <WarningLevel>Level4</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <SDLCheck>true</SDLCheck>
+      <ConformanceMode>true</ConformanceMode>
+      <AdditionalIncludeDirectories>$(ProjectDir);$(ProjectDir)src;$(ProjectDir)includes;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <LanguageStandard>stdcpplatest</LanguageStandard>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <StringPooling>true</StringPooling>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <AdditionalLibraryDirectories>$(ProjectDir)libraries;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalDependencies>vgui.lib;libMinHook.x86.lib;OpenGL32.lib;VMProtectSDK32.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <SDLCheck>true</SDLCheck>
+      <ConformanceMode>true</ConformanceMode>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <ConformanceMode>false</ConformanceMode>
+      <InlineFunctionExpansion>AnySuitable</InlineFunctionExpansion>
+      <FavorSizeOrSpeed>Speed</FavorSizeOrSpeed>
+      <StringPooling>true</StringPooling>
+      <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
+      <LanguageStandard>stdcpplatest</LanguageStandard>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <PrecompiledHeaderFile>framework.h</PrecompiledHeaderFile>
+      <AdditionalIncludeDirectories>$(ProjectDir);$(ProjectDir)src;$(ProjectDir)includes;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OmitFramePointers>true</OmitFramePointers>
+      <EnableFiberSafeOptimizations>true</EnableFiberSafeOptimizations>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <AdditionalDependencies>vgui.lib;libMinHook.x86.lib;OpenGL32.lib;VMProtectSDK32.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalLibraryDirectories>$(ProjectDir)libraries;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <ConformanceMode>true</ConformanceMode>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="includes\ImGui\imgui.cpp" />
+    <ClCompile Include="includes\ImGui\imgui_demo.cpp" />
+    <ClCompile Include="includes\ImGui\imgui_draw.cpp" />
+    <ClCompile Include="includes\ImGui\imgui_impl_opengl2.cpp" />
+    <ClCompile Include="includes\ImGui\imgui_impl_win32.cpp" />
+    <ClCompile Include="includes\ImGui\imgui_widgets.cpp" />
+    <ClCompile Include="includes\ImGui\imgui_widgets_custom.cpp" />
+    <ClCompile Include="includes\SimpleIni\ConvertUTF.cpp" />
+    <ClCompile Include="includes\Soil\image_DXT.cpp" />
+    <ClCompile Include="includes\Soil\image_helper.cpp" />
+    <ClCompile Include="includes\Soil\soil.cpp" />
+    <ClCompile Include="includes\Soil\stb_image_aug.cpp" />
+    <ClCompile Include="includes\ValveSDK\sdk.cpp" />
+    <ClCompile Include="includes\VmtHook\VmtHook.cpp" />
+    <ClCompile Include="src\client.cpp" />
+    <ClCompile Include="src\common\cmds.cpp" />
+    <ClCompile Include="src\common\cvars.cpp" />
+    <ClCompile Include="src\common\globals.cpp" />
+    <ClCompile Include="src\common\offsets.cpp" />
+    <ClCompile Include="src\common\settings.cpp" />
+    <ClCompile Include="src\features\knifebot\knifebot.cpp" />
+    <ClCompile Include="src\features\kreedz\kreedz.cpp" />
+    <ClCompile Include="src\features\legitbot\legitbot.cpp" />
+    <ClCompile Include="src\features\miscellaneous\miscellaneous.cpp" />
+    <ClCompile Include="src\features\miscellaneous\revemu.cpp" />
+    <ClCompile Include="src\features\miscellaneous\sandbox.cpp" />
+    <ClCompile Include="src\features\nospread\nospread.cpp" />
+    <ClCompile Include="src\features\ragebot\ragebot.cpp" />
+    <ClCompile Include="src\features\sound\sound.cpp" />
+    <ClCompile Include="src\features\visuals\chams\chams_backtrack.cpp" />
+    <ClCompile Include="src\features\visuals\chams\chams_desync_aa.cpp" />
+    <ClCompile Include="src\features\visuals\chams\chams_hands.cpp" />
+    <ClCompile Include="src\features\visuals\chams\chams_hit_position.cpp" />
+    <ClCompile Include="src\features\visuals\chams\chams_players.cpp" />
+    <ClCompile Include="src\features\visuals\chams\render_models.cpp" />
+    <ClCompile Include="src\features\visuals\crosshair\default_crosshair.cpp" />
+    <ClCompile Include="src\features\visuals\glow\glow_players.cpp" />
+    <ClCompile Include="src\features\visuals\light\dlight.cpp" />
+    <ClCompile Include="src\features\visuals\light\elight.cpp" />
+    <ClCompile Include="src\features\visuals\overlay\draw_local.cpp" />
+    <ClCompile Include="src\features\visuals\overlay\draw_players.cpp" />
+    <ClCompile Include="src\features\visuals\overlay\draw_players_out_of_fov.cpp" />
+    <ClCompile Include="src\features\visuals\overlay\draw_players_sound.cpp" />
+    <ClCompile Include="src\features\visuals\overlay\draw_world.cpp" />
+    <ClCompile Include="src\features\visuals\overlay\selection_players.cpp" />
+    <ClCompile Include="src\features\visuals\visuals.cpp" />
+    <ClCompile Include="src\framework.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Create</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="src\hpp.cpp" />
+    <ClCompile Include="src\math\qangle.cpp" />
+    <ClCompile Include="src\math\vector.cpp" />
+    <ClCompile Include="src\messages\enginemsg.cpp" />
+    <ClCompile Include="src\messages\usermsg.cpp" />
+    <ClCompile Include="src\opengl.cpp" />
+    <ClCompile Include="src\overlay\glscreenupdate.cpp" />
+    <ClCompile Include="src\overlay\menu\common\menu_hotkeys.cpp" />
+    <ClCompile Include="src\overlay\menu\common\menu_settings_list.cpp" />
+    <ClCompile Include="src\overlay\menu\gui\menu_fade_bg.cpp" />
+    <ClCompile Include="src\overlay\menu\gui\menu_gui.cpp" />
+    <ClCompile Include="src\overlay\menu\gui\menu_popup_modal.cpp" />
+    <ClCompile Include="src\overlay\menu\gui\menu_themes.cpp" />
+    <ClCompile Include="src\overlay\menu\menu.cpp" />
+    <ClCompile Include="src\overlay\menu\menu_draw.cpp" />
+    <ClCompile Include="src\overlay\menu\menu_draw_legit.cpp" />
+    <ClCompile Include="src\overlay\menu\menu_draw_rage.cpp" />
+    <ClCompile Include="src\overlay\menu\menu_draw_visuals.cpp" />
+    <ClCompile Include="src\overlay\notifications\notifications.cpp" />
+    <ClCompile Include="src\renderer\drawlist.cpp" />
+    <ClCompile Include="src\renderer\renderer.cpp" />
+    <ClCompile Include="src\tools\game.cpp" />
+    <ClCompile Include="src\tools\math.cpp" />
+    <ClCompile Include="src\tools\physent.cpp" />
+    <ClCompile Include="src\tools\utils.cpp" />
+    <ClCompile Include="src\world\baseentity.cpp" />
+    <ClCompile Include="src\world\baselocal.cpp" />
+    <ClCompile Include="src\world\baseplayer.cpp" />
+    <ClCompile Include="src\world\hitregister.cpp" />
+    <ClCompile Include="src\world\hud_player_info.cpp" />
+    <ClCompile Include="src\world\extra_player_info.cpp" />
+    <ClCompile Include="src\world\baseweapon.cpp" />
+    <ClCompile Include="src\world\sequences.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="includes\ImGui\imconfig.h" />
+    <ClInclude Include="includes\ImGui\imgui.h" />
+    <ClInclude Include="includes\ImGui\imgui_impl_opengl2.h" />
+    <ClInclude Include="includes\ImGui\imgui_impl_win32.h" />
+    <ClInclude Include="includes\ImGui\imgui_internal.h" />
+    <ClInclude Include="includes\ImGui\imgui_user.h" />
+    <ClInclude Include="includes\ImGui\imstb_rectpack.h" />
+    <ClInclude Include="includes\ImGui\imstb_textedit.h" />
+    <ClInclude Include="includes\ImGui\imstb_truetype.h" />
+    <ClInclude Include="includes\MinHook\funchook.h" />
+    <ClInclude Include="includes\MinHook\MinHook.h" />
+    <ClInclude Include="includes\SimpleIni\ConvertUTF.h" />
+    <ClInclude Include="includes\SimpleIni\SimpleIni.h" />
+    <ClInclude Include="includes\Soil\glcorearb.h" />
+    <ClInclude Include="includes\Soil\image_DXT.h" />
+    <ClInclude Include="includes\Soil\image_helper.h" />
+    <ClInclude Include="includes\Soil\khrplatform.h" />
+    <ClInclude Include="includes\Soil\soil.h" />
+    <ClInclude Include="includes\Soil\stbi_DDS_aug.h" />
+    <ClInclude Include="includes\Soil\stbi_DDS_aug_c.h" />
+    <ClInclude Include="includes\Soil\stb_image_aug.h" />
+    <ClInclude Include="includes\ValveSDK\common\beamdef.h" />
+    <ClInclude Include="includes\ValveSDK\common\cl_entity.h" />
+    <ClInclude Include="includes\ValveSDK\common\com_model.h" />
+    <ClInclude Include="includes\ValveSDK\common\const.h" />
+    <ClInclude Include="includes\ValveSDK\common\crc.h" />
+    <ClInclude Include="includes\ValveSDK\common\cvardef.h" />
+    <ClInclude Include="includes\ValveSDK\common\dlight.h" />
+    <ClInclude Include="includes\ValveSDK\common\entity_state.h" />
+    <ClInclude Include="includes\ValveSDK\common\entity_types.h" />
+    <ClInclude Include="includes\ValveSDK\common\enums.h" />
+    <ClInclude Include="includes\ValveSDK\common\event_api.h" />
+    <ClInclude Include="includes\ValveSDK\common\event_args.h" />
+    <ClInclude Include="includes\ValveSDK\common\event_flags.h" />
+    <ClInclude Include="includes\ValveSDK\common\hltv.h" />
+    <ClInclude Include="includes\ValveSDK\common\IDemoPlayer.h" />
+    <ClInclude Include="includes\ValveSDK\common\in_buttons.h" />
+    <ClInclude Include="includes\ValveSDK\common\netadr.h" />
+    <ClInclude Include="includes\ValveSDK\common\net_api.h" />
+    <ClInclude Include="includes\ValveSDK\common\parsemsg.h" />
+    <ClInclude Include="includes\ValveSDK\common\particledef.h" />
+    <ClInclude Include="includes\ValveSDK\common\pmtrace.h" />
+    <ClInclude Include="includes\ValveSDK\common\qlimits.h" />
+    <ClInclude Include="includes\ValveSDK\common\quakedef.h" />
+    <ClInclude Include="includes\ValveSDK\common\ref_params.h" />
+    <ClInclude Include="includes\ValveSDK\common\r_efx.h" />
+    <ClInclude Include="includes\ValveSDK\common\r_studioint.h" />
+    <ClInclude Include="includes\ValveSDK\common\screenfade.h" />
+    <ClInclude Include="includes\ValveSDK\common\Sequence.h" />
+    <ClInclude Include="includes\ValveSDK\common\triangleapi.h" />
+    <ClInclude Include="includes\ValveSDK\common\usercmd.h" />
+    <ClInclude Include="includes\ValveSDK\common\vmodes.h" />
+    <ClInclude Include="includes\ValveSDK\common\weaponinfo.h" />
+    <ClInclude Include="includes\ValveSDK\dlls\activity.h" />
+    <ClInclude Include="includes\ValveSDK\dlls\cdll_dll.h" />
+    <ClInclude Include="includes\ValveSDK\dlls\player.h" />
+    <ClInclude Include="includes\ValveSDK\dlls\weapons.h" />
+    <ClInclude Include="includes\ValveSDK\dlls\weapontype.h" />
+    <ClInclude Include="includes\ValveSDK\engine\archtypes.h" />
+    <ClInclude Include="includes\ValveSDK\engine\bspfile.h" />
+    <ClInclude Include="includes\ValveSDK\engine\cdll_int.h" />
+    <ClInclude Include="includes\ValveSDK\engine\client.h" />
+    <ClInclude Include="includes\ValveSDK\engine\common.h" />
+    <ClInclude Include="includes\ValveSDK\engine\consistency.h" />
+    <ClInclude Include="includes\ValveSDK\engine\custom.h" />
+    <ClInclude Include="includes\ValveSDK\engine\delta_packet.h" />
+    <ClInclude Include="includes\ValveSDK\engine\event.h" />
+    <ClInclude Include="includes\ValveSDK\engine\model.h" />
+    <ClInclude Include="includes\ValveSDK\engine\modelgen.h" />
+    <ClInclude Include="includes\ValveSDK\engine\net.h" />
+    <ClInclude Include="includes\ValveSDK\engine\progdefs.h" />
+    <ClInclude Include="includes\ValveSDK\engine\progs.h" />
+    <ClInclude Include="includes\ValveSDK\engine\sound.h" />
+    <ClInclude Include="includes\ValveSDK\engine\spritegn.h" />
+    <ClInclude Include="includes\ValveSDK\engine\studio.h" />
+    <ClInclude Include="includes\ValveSDK\gameui\IGameConsole.h" />
+    <ClInclude Include="includes\ValveSDK\gameui\IGameUI.h" />
+    <ClInclude Include="includes\ValveSDK\gameui\IGameUIFuncs.h" />
+    <ClInclude Include="includes\ValveSDK\gameui\IRunGameEngine.h" />
+    <ClInclude Include="includes\ValveSDK\gameui\IVGuiModuleLoader.h" />
+    <ClInclude Include="includes\ValveSDK\pm_shared\pm_defs.h" />
+    <ClInclude Include="includes\ValveSDK\pm_shared\pm_info.h" />
+    <ClInclude Include="includes\ValveSDK\pm_shared\pm_materials.h" />
+    <ClInclude Include="includes\ValveSDK\pm_shared\pm_movevars.h" />
+    <ClInclude Include="includes\ValveSDK\pm_shared\pm_shared.h" />
+    <ClInclude Include="includes\ValveSDK\public\keydefs.h" />
+    <ClInclude Include="includes\ValveSDK\public\steam\isteamapps.h" />
+    <ClInclude Include="includes\ValveSDK\public\steam\isteambilling.h" />
+    <ClInclude Include="includes\ValveSDK\public\steam\isteamclient.h" />
+    <ClInclude Include="includes\ValveSDK\public\steam\isteamcontroller.h" />
+    <ClInclude Include="includes\ValveSDK\public\steam\isteamfriends.h" />
+    <ClInclude Include="includes\ValveSDK\public\steam\isteamgameserver.h" />
+    <ClInclude Include="includes\ValveSDK\public\steam\isteamgameserverstats.h" />
+    <ClInclude Include="includes\ValveSDK\public\steam\isteamhttp.h" />
+    <ClInclude Include="includes\ValveSDK\public\steam\isteammatchmaking.h" />
+    <ClInclude Include="includes\ValveSDK\public\steam\isteamnetworking.h" />
+    <ClInclude Include="includes\ValveSDK\public\steam\isteamremotestorage.h" />
+    <ClInclude Include="includes\ValveSDK\public\steam\isteamscreenshots.h" />
+    <ClInclude Include="includes\ValveSDK\public\steam\isteamunifiedmessages.h" />
+    <ClInclude Include="includes\ValveSDK\public\steam\isteamuser.h" />
+    <ClInclude Include="includes\ValveSDK\public\steam\isteamuserstats.h" />
+    <ClInclude Include="includes\ValveSDK\public\steam\isteamutils.h" />
+    <ClInclude Include="includes\ValveSDK\public\steam\matchmakingtypes.h" />
+    <ClInclude Include="includes\ValveSDK\public\steam\steamclientpublic.h" />
+    <ClInclude Include="includes\ValveSDK\public\steam\steamhttpenums.h" />
+    <ClInclude Include="includes\ValveSDK\public\steam\steamtypes.h" />
+    <ClInclude Include="includes\ValveSDK\public\steam\steam_api.h" />
+    <ClInclude Include="includes\ValveSDK\public\steam\steam_gameserver.h" />
+    <ClInclude Include="includes\ValveSDK\sdk.h" />
+    <ClInclude Include="includes\ValveSDK\vgui2\IEngineVGui.h" />
+    <ClInclude Include="includes\ValveSDK\vgui2\IHTML.h" />
+    <ClInclude Include="includes\ValveSDK\vgui2\IPanel.h" />
+    <ClInclude Include="includes\ValveSDK\vgui2\ISurface.h" />
+    <ClInclude Include="includes\ValveSDK\vgui\VGUI.h" />
+    <ClInclude Include="includes\ValveSDK\vgui\VGUI_ActionSignal.h" />
+    <ClInclude Include="includes\ValveSDK\vgui\VGUI_App.h" />
+    <ClInclude Include="includes\ValveSDK\vgui\VGUI_Bitmap.h" />
+    <ClInclude Include="includes\ValveSDK\vgui\VGUI_BitmapTGA.h" />
+    <ClInclude Include="includes\ValveSDK\vgui\VGUI_Border.h" />
+    <ClInclude Include="includes\ValveSDK\vgui\VGUI_BorderLayout.h" />
+    <ClInclude Include="includes\ValveSDK\vgui\VGUI_BorderPair.h" />
+    <ClInclude Include="includes\ValveSDK\vgui\VGUI_BuildGroup.h" />
+    <ClInclude Include="includes\ValveSDK\vgui\VGUI_Button.h" />
+    <ClInclude Include="includes\ValveSDK\vgui\VGUI_ButtonController.h" />
+    <ClInclude Include="includes\ValveSDK\vgui\VGUI_ButtonGroup.h" />
+    <ClInclude Include="includes\ValveSDK\vgui\VGUI_ChangeSignal.h" />
+    <ClInclude Include="includes\ValveSDK\vgui\VGUI_CheckButton.h" />
+    <ClInclude Include="includes\ValveSDK\vgui\VGUI_Color.h" />
+    <ClInclude Include="includes\ValveSDK\vgui\VGUI_ComboKey.h" />
+    <ClInclude Include="includes\ValveSDK\vgui\VGUI_ConfigWizard.h" />
+    <ClInclude Include="includes\ValveSDK\vgui\VGUI_Cursor.h" />
+    <ClInclude Include="includes\ValveSDK\vgui\VGUI_Dar.h" />
+    <ClInclude Include="includes\ValveSDK\vgui\VGUI_DataInputStream.h" />
+    <ClInclude Include="includes\ValveSDK\vgui\VGUI_Desktop.h" />
+    <ClInclude Include="includes\ValveSDK\vgui\VGUI_DesktopIcon.h" />
+    <ClInclude Include="includes\ValveSDK\vgui\VGUI_EditPanel.h" />
+    <ClInclude Include="includes\ValveSDK\vgui\VGUI_EtchedBorder.h" />
+    <ClInclude Include="includes\ValveSDK\vgui\VGUI_FileInputStream.h" />
+    <ClInclude Include="includes\ValveSDK\vgui\VGUI_FlowLayout.h" />
+    <ClInclude Include="includes\ValveSDK\vgui\VGUI_FocusChangeSignal.h" />
+    <ClInclude Include="includes\ValveSDK\vgui\VGUI_FocusNavGroup.h" />
+    <ClInclude Include="includes\ValveSDK\vgui\VGUI_Font.h" />
+    <ClInclude Include="includes\ValveSDK\vgui\VGUI_Frame.h" />
+    <ClInclude Include="includes\ValveSDK\vgui\VGUI_FrameSignal.h" />
+    <ClInclude Include="includes\ValveSDK\vgui\VGUI_GridLayout.h" />
+    <ClInclude Include="includes\ValveSDK\vgui\VGUI_HeaderPanel.h" />
+    <ClInclude Include="includes\ValveSDK\vgui\VGUI_Image.h" />
+    <ClInclude Include="includes\ValveSDK\vgui\VGUI_ImagePanel.h" />
+    <ClInclude Include="includes\ValveSDK\vgui\VGUI_InputSignal.h" />
+    <ClInclude Include="includes\ValveSDK\vgui\VGUI_InputStream.h" />
+    <ClInclude Include="includes\ValveSDK\vgui\VGUI_IntChangeSignal.h" />
+    <ClInclude Include="includes\ValveSDK\vgui\VGUI_IntLabel.h" />
+    <ClInclude Include="includes\ValveSDK\vgui\VGUI_KeyCode.h" />
+    <ClInclude Include="includes\ValveSDK\vgui\VGUI_Label.h" />
+    <ClInclude Include="includes\ValveSDK\vgui\VGUI_Layout.h" />
+    <ClInclude Include="includes\ValveSDK\vgui\VGUI_LayoutInfo.h" />
+    <ClInclude Include="includes\ValveSDK\vgui\VGUI_LineBorder.h" />
+    <ClInclude Include="includes\ValveSDK\vgui\VGUI_ListPanel.h" />
+    <ClInclude Include="includes\ValveSDK\vgui\VGUI_LoweredBorder.h" />
+    <ClInclude Include="includes\ValveSDK\vgui\VGUI_Menu.h" />
+    <ClInclude Include="includes\ValveSDK\vgui\VGUI_MenuItem.h" />
+    <ClInclude Include="includes\ValveSDK\vgui\VGUI_MenuSeparator.h" />
+    <ClInclude Include="includes\ValveSDK\vgui\VGUI_MessageBox.h" />
+    <ClInclude Include="includes\ValveSDK\vgui\VGUI_MiniApp.h" />
+    <ClInclude Include="includes\ValveSDK\vgui\VGUI_MouseCode.h" />
+    <ClInclude Include="includes\ValveSDK\vgui\VGUI_Panel.h" />
+    <ClInclude Include="includes\ValveSDK\vgui\VGUI_Point.h" />
+    <ClInclude Include="includes\ValveSDK\vgui\VGUI_PopupMenu.h" />
+    <ClInclude Include="includes\ValveSDK\vgui\VGUI_ProgressBar.h" />
+    <ClInclude Include="includes\ValveSDK\vgui\VGUI_RadioButton.h" />
+    <ClInclude Include="includes\ValveSDK\vgui\VGUI_RaisedBorder.h" />
+    <ClInclude Include="includes\ValveSDK\vgui\VGUI_RepaintSignal.h" />
+    <ClInclude Include="includes\ValveSDK\vgui\VGUI_Scheme.h" />
+    <ClInclude Include="includes\ValveSDK\vgui\VGUI_ScrollBar.h" />
+    <ClInclude Include="includes\ValveSDK\vgui\VGUI_ScrollPanel.h" />
+    <ClInclude Include="includes\ValveSDK\vgui\VGUI_Slider.h" />
+    <ClInclude Include="includes\ValveSDK\vgui\VGUI_StackLayout.h" />
+    <ClInclude Include="includes\ValveSDK\vgui\VGUI_String.h" />
+    <ClInclude Include="includes\ValveSDK\vgui\VGUI_Surface.h" />
+    <ClInclude Include="includes\ValveSDK\vgui\VGUI_SurfaceBase.h" />
+    <ClInclude Include="includes\ValveSDK\vgui\VGUI_SurfaceGL.h" />
+    <ClInclude Include="includes\ValveSDK\vgui\VGUI_TablePanel.h" />
+    <ClInclude Include="includes\ValveSDK\vgui\VGUI_TabPanel.h" />
+    <ClInclude Include="includes\ValveSDK\vgui\VGUI_TaskBar.h" />
+    <ClInclude Include="includes\ValveSDK\vgui\VGUI_TextEntry.h" />
+    <ClInclude Include="includes\ValveSDK\vgui\VGUI_TextGrid.h" />
+    <ClInclude Include="includes\ValveSDK\vgui\VGUI_TextImage.h" />
+    <ClInclude Include="includes\ValveSDK\vgui\VGUI_TextPanel.h" />
+    <ClInclude Include="includes\ValveSDK\vgui\VGUI_TickSignal.h" />
+    <ClInclude Include="includes\ValveSDK\vgui\VGUI_ToggleButton.h" />
+    <ClInclude Include="includes\ValveSDK\vgui\VGUI_TreeFolder.h" />
+    <ClInclude Include="includes\ValveSDK\vgui\VGUI_WizardPanel.h" />
+    <ClInclude Include="includes\VMProtectSDK\VMProtectSDK.h" />
+    <ClInclude Include="includes\VmtHook\VmtHook.h" />
+    <ClInclude Include="src\client.h" />
+    <ClInclude Include="src\common\cmds.h" />
+    <ClInclude Include="src\common\cvars.h" />
+    <ClInclude Include="src\common\globals.h" />
+    <ClInclude Include="src\common\offsets.h" />
+    <ClInclude Include="src\common\settings.h" />
+    <ClInclude Include="src\features\knifebot\knifebot.h" />
+    <ClInclude Include="src\features\kreedz\kreedz.h" />
+    <ClInclude Include="src\features\legitbot\legitbot.h" />
+    <ClInclude Include="src\features\miscellaneous\miscellaneous.h" />
+    <ClInclude Include="src\features\miscellaneous\sandbox.h" />
+    <ClInclude Include="src\features\miscellaneous\revemu.h" />
+    <ClInclude Include="src\features\nospread\nospread.h" />
+    <ClInclude Include="src\features\ragebot\ragebot.h" />
+    <ClInclude Include="src\features\sound\sound.h" />
+    <ClInclude Include="src\features\visuals\chams\chams_backtrack.h" />
+    <ClInclude Include="src\features\visuals\chams\chams_desync_aa.h" />
+    <ClInclude Include="src\features\visuals\chams\chams_hands.h" />
+    <ClInclude Include="src\features\visuals\chams\chams_hit_position.h" />
+    <ClInclude Include="src\features\visuals\chams\chams_players.h" />
+    <ClInclude Include="src\features\visuals\chams\render_models.h" />
+    <ClInclude Include="src\features\visuals\crosshair\default_crosshair.h" />
+    <ClInclude Include="src\features\visuals\glow\glow_players.h" />
+    <ClInclude Include="src\features\visuals\light\dlight.h" />
+    <ClInclude Include="src\features\visuals\light\elight.h" />
+    <ClInclude Include="src\features\visuals\overlay\draw_local.h" />
+    <ClInclude Include="src\features\visuals\overlay\draw_players.h" />
+    <ClInclude Include="src\features\visuals\overlay\draw_players_out_of_fov.h" />
+    <ClInclude Include="src\features\visuals\overlay\draw_players_sound.h" />
+    <ClInclude Include="src\features\visuals\overlay\draw_world.h" />
+    <ClInclude Include="src\features\visuals\overlay\selection_players.h" />
+    <ClInclude Include="src\features\visuals\visuals.h" />
+    <ClInclude Include="src\framework.h" />
+    <ClInclude Include="src\hpp.h" />
+    <ClInclude Include="src\math\matrix3x4.h" />
+    <ClInclude Include="src\math\qangle.h" />
+    <ClInclude Include="src\math\vector.h" />
+    <ClInclude Include="src\messages\enginemsg.h" />
+    <ClInclude Include="src\messages\usermsg.h" />
+    <ClInclude Include="src\opengl.h" />
+    <ClInclude Include="src\overlay\images\defuser\defuser.h" />
+    <ClInclude Include="src\overlay\images\menu\tab_configs_icon.h" />
+    <ClInclude Include="src\overlay\images\menu\tab_console_icon.h" />
+    <ClInclude Include="src\overlay\images\menu\tab_kreedz_icon.h" />
+    <ClInclude Include="src\overlay\images\menu\tab_legit_icon.h" />
+    <ClInclude Include="src\overlay\images\menu\tab_misc_icon.h" />
+    <ClInclude Include="src\overlay\images\menu\tab_rage_icon.h" />
+    <ClInclude Include="src\overlay\images\menu\tab_visuals_icon.h" />
+    <ClInclude Include="src\overlay\images\menu\background_title.h" />
+    <ClInclude Include="src\overlay\images\menu\wpn_pistols_icon.h" />
+    <ClInclude Include="src\overlay\images\menu\wpn_rifles_icon.h" />
+    <ClInclude Include="src\overlay\images\menu\wpn_shotguns_icon.h" />
+    <ClInclude Include="src\overlay\images\menu\wpn_smgs_icon.h" />
+    <ClInclude Include="src\overlay\images\menu\wpn_snipers_icon.h" />
+    <ClInclude Include="src\overlay\images\weapons\weapon_ak47.h" />
+    <ClInclude Include="src\overlay\images\weapons\weapon_aug.h" />
+    <ClInclude Include="src\overlay\images\weapons\weapon_awp.h" />
+    <ClInclude Include="src\overlay\images\weapons\weapon_c4.h" />
+    <ClInclude Include="src\overlay\images\weapons\weapon_deagle.h" />
+    <ClInclude Include="src\overlay\images\weapons\weapon_elite.h" />
+    <ClInclude Include="src\overlay\images\weapons\weapon_famas.h" />
+    <ClInclude Include="src\overlay\images\weapons\weapon_fiveseven.h" />
+    <ClInclude Include="src\overlay\images\weapons\weapon_flashbang.h" />
+    <ClInclude Include="src\overlay\images\weapons\weapon_g3sg1.h" />
+    <ClInclude Include="src\overlay\images\weapons\weapon_galil.h" />
+    <ClInclude Include="src\overlay\images\weapons\weapon_glock18.h" />
+    <ClInclude Include="src\overlay\images\weapons\weapon_hegrenade.h" />
+    <ClInclude Include="src\overlay\images\weapons\weapon_knife.h" />
+    <ClInclude Include="src\overlay\images\weapons\weapon_m249.h" />
+    <ClInclude Include="src\overlay\images\weapons\weapon_m3.h" />
+    <ClInclude Include="src\overlay\images\weapons\weapon_m4a1.h" />
+    <ClInclude Include="src\overlay\images\weapons\weapon_mac10.h" />
+    <ClInclude Include="src\overlay\images\weapons\weapon_mp5.h" />
+    <ClInclude Include="src\overlay\images\weapons\weapon_p228.h" />
+    <ClInclude Include="src\overlay\images\weapons\weapon_p90.h" />
+    <ClInclude Include="src\overlay\images\weapons\weapon_scout.h" />
+    <ClInclude Include="src\overlay\images\weapons\weapon_sg550.h" />
+    <ClInclude Include="src\overlay\images\weapons\weapon_sg552.h" />
+    <ClInclude Include="src\overlay\images\weapons\weapon_smokegrenade.h" />
+    <ClInclude Include="src\overlay\images\weapons\weapon_tmp.h" />
+    <ClInclude Include="src\overlay\images\weapons\weapon_ump45.h" />
+    <ClInclude Include="src\overlay\images\weapons\weapon_usp.h" />
+    <ClInclude Include="src\overlay\images\weapons\weapon_xm1014.h" />
+    <ClInclude Include="src\overlay\menu\common\menu_hotkeys.h" />
+    <ClInclude Include="src\overlay\menu\common\menu_settings_list.h" />
+    <ClInclude Include="src\overlay\menu\gui\menu_fade_bg.h" />
+    <ClInclude Include="src\overlay\menu\gui\menu_gui.h" />
+    <ClInclude Include="src\overlay\menu\gui\menu_popup_modal.h" />
+    <ClInclude Include="src\overlay\menu\gui\menu_themes.h" />
+    <ClInclude Include="src\overlay\menu\menu.h" />
+    <ClInclude Include="src\overlay\notifications\notifications.h" />
+    <ClInclude Include="src\renderer\drawlist.h" />
+    <ClInclude Include="src\renderer\renderer.h" />
+    <ClInclude Include="src\targetver.h" />
+    <ClInclude Include="src\tools\build.h" />
+    <ClInclude Include="src\tools\game.h" />
+    <ClInclude Include="src\tools\math.h" />
+    <ClInclude Include="src\tools\physent.h" />
+    <ClInclude Include="src\tools\utils.h" />
+    <ClInclude Include="src\world\baseentity.h" />
+    <ClInclude Include="src\world\baseinfo.h" />
+    <ClInclude Include="src\world\baselocal.h" />
+    <ClInclude Include="src\world\baseplayer.h" />
+    <ClInclude Include="src\world\hitregister.h" />
+    <ClInclude Include="src\world\hud_player_info.h" />
+    <ClInclude Include="src\world\extra_player_info.h" />
+    <ClInclude Include="src\world\baseweapon.h" />
+    <ClInclude Include="src\world\sequences.h" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

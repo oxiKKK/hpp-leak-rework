@@ -1,0 +1,123 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Исходные файлы">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Файлы заголовков">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;hm;inl;inc;ipp;xsd</Extensions>
+    </Filter>
+    <Filter Include="Файлы ресурсов">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="Файлы заголовков\ImGui">
+      <UniqueIdentifier>{eeed54e2-aafb-4c87-b5c0-366feb35f0c7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Исходные файлы\ImGui">
+      <UniqueIdentifier>{a45407cf-dac1-426e-84e3-fc4f53b69213}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Файлы ресурсов\Images">
+      <UniqueIdentifier>{d3778fe1-ead3-4a9a-9e9e-809e1f7fb45a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Файлы заголовков\Themida">
+      <UniqueIdentifier>{7d25f943-4565-4a12-99f9-881eb3d59913}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="ImGui\imgui.cpp">
+      <Filter>Исходные файлы\ImGui</Filter>
+    </ClCompile>
+    <ClCompile Include="ImGui\imgui_draw.cpp">
+      <Filter>Исходные файлы\ImGui</Filter>
+    </ClCompile>
+    <ClCompile Include="ImGui\imgui_impl_dx9.cpp">
+      <Filter>Исходные файлы\ImGui</Filter>
+    </ClCompile>
+    <ClCompile Include="WindowForm.cpp">
+      <Filter>Исходные файлы</Filter>
+    </ClCompile>
+    <ClCompile Include="main.cpp">
+      <Filter>Исходные файлы</Filter>
+    </ClCompile>
+    <ClCompile Include="license.cpp">
+      <Filter>Исходные файлы</Filter>
+    </ClCompile>
+    <ClCompile Include="build.cpp">
+      <Filter>Исходные файлы</Filter>
+    </ClCompile>
+    <ClCompile Include="window.cpp">
+      <Filter>Исходные файлы</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="ImGui\imconfig.h">
+      <Filter>Файлы заголовков\ImGui</Filter>
+    </ClInclude>
+    <ClInclude Include="ImGui\imgui.h">
+      <Filter>Файлы заголовков\ImGui</Filter>
+    </ClInclude>
+    <ClInclude Include="ImGui\imgui_impl_dx9.h">
+      <Filter>Файлы заголовков\ImGui</Filter>
+    </ClInclude>
+    <ClInclude Include="ImGui\imgui_internal.h">
+      <Filter>Файлы заголовков\ImGui</Filter>
+    </ClInclude>
+    <ClInclude Include="ImGui\stb_rect_pack.h">
+      <Filter>Файлы заголовков\ImGui</Filter>
+    </ClInclude>
+    <ClInclude Include="ImGui\stb_textedit.h">
+      <Filter>Файлы заголовков\ImGui</Filter>
+    </ClInclude>
+    <ClInclude Include="ImGui\stb_truetype.h">
+      <Filter>Файлы заголовков\ImGui</Filter>
+    </ClInclude>
+    <ClInclude Include="IMG_TitleLogo.h">
+      <Filter>Файлы ресурсов\Images</Filter>
+    </ClInclude>
+    <ClInclude Include="IMG_Logotype.h">
+      <Filter>Файлы ресурсов\Images</Filter>
+    </ClInclude>
+    <ClInclude Include="ImGui\Font_LucidaGrande.h">
+      <Filter>Файлы ресурсов</Filter>
+    </ClInclude>
+    <ClInclude Include="WindowForm.h">
+      <Filter>Файлы заголовков</Filter>
+    </ClInclude>
+    <ClInclude Include="main.h">
+      <Filter>Файлы заголовков</Filter>
+    </ClInclude>
+    <ClInclude Include="license.h">
+      <Filter>Файлы заголовков</Filter>
+    </ClInclude>
+    <ClInclude Include="build.h">
+      <Filter>Файлы заголовков</Filter>
+    </ClInclude>
+    <ClInclude Include="window.h">
+      <Filter>Файлы заголовков</Filter>
+    </ClInclude>
+    <ClInclude Include="Themida\SecureEngineCustomVMs.h">
+      <Filter>Файлы заголовков\Themida</Filter>
+    </ClInclude>
+    <ClInclude Include="Themida\SecureEngineCustomVMs_BorlandC_inline.h">
+      <Filter>Файлы заголовков\Themida</Filter>
+    </ClInclude>
+    <ClInclude Include="Themida\SecureEngineCustomVMs_GNU_inline.h">
+      <Filter>Файлы заголовков\Themida</Filter>
+    </ClInclude>
+    <ClInclude Include="Themida\SecureEngineCustomVMs_ICL_inline.h">
+      <Filter>Файлы заголовков\Themida</Filter>
+    </ClInclude>
+    <ClInclude Include="Themida\SecureEngineCustomVMs_LCC_inline.h">
+      <Filter>Файлы заголовков\Themida</Filter>
+    </ClInclude>
+    <ClInclude Include="Themida\SecureEngineCustomVMs_VC_inline.h">
+      <Filter>Файлы заголовков\Themida</Filter>
+    </ClInclude>
+    <ClInclude Include="Themida\ThemidaSDK.h">
+      <Filter>Файлы заголовков\Themida</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>
