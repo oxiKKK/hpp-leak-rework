@@ -22,5 +22,5 @@ Loaders aren't supposed to be compiled, I didn't even test them.
 # CHEAT 1
 ![alt text](https://i.imgur.com/vljskVA.png)
 
-# CHEAT 1
+# CHEAT 2
 ![alt text](https://i.imgur.com/zOd7PLR.png)
